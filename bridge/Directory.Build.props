@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <QuantumEnginePath Condition="'$(QuantumEnginePath)' == ''">C:\Program Files\JBL\QuantumENGINE\</QuantumEnginePath>
+  </PropertyGroup>
+</Project>

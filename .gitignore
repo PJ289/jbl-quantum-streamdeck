@@ -1,0 +1,21 @@
+node_modules/
+dist/
+*.streamDeckPlugin
+bridge/bin/
+bridge/obj/
+
+# Plugin runtime output (generated) — includes QuantumBridge.exe, never commit
+com.pj289.jbl-quantum.sdPlugin/bin/
+com.pj289.jbl-quantum.sdPlugin/logs/
+
+# Never commit JBL / Harman / Quantum Engine binaries
+**/QuantumServer.dll
+**/IPC.dll
+**/ShareMemory.dll
+
+# Local / OS junk
+.DS_Store
+Thumbs.db
+*.user
+*.suo
+.vs/

@@ -1,0 +1,4698 @@
+[
+  {
+    "id": 2,
+    "name": "ProductManagement.DEVICE_ONLINE_MSG"
+  },
+  {
+    "id": 3,
+    "name": "ProductManagement.DEVICE_OFFLINE_MSG"
+  },
+  {
+    "id": 4,
+    "name": "ProductManagement.DEVICE_READY_MSG"
+  },
+  {
+    "id": 5,
+    "name": "ProductManagement.DEVICE_NOT_READY_MSG"
+  },
+  {
+    "id": 6,
+    "name": "ProductManagement.SUBSCRIBE_MSG"
+  },
+  {
+    "id": 7,
+    "name": "ProductManagement.UNSUBSCRIBE_MSG"
+  },
+  {
+    "id": 8,
+    "name": "ProductManagement.VALID_DEVICE_LIST_MSG"
+  },
+  {
+    "id": 4097,
+    "name": "FunctionAvailableProp.GetMsgID"
+  },
+  {
+    "id": 4098,
+    "name": "FunctionAvailableProp.NotifyMsgID"
+  },
+  {
+    "id": 4099,
+    "name": "FunctionAvailableProp.GetRespMsgID"
+  },
+  {
+    "id": 4100,
+    "name": "FunctionAvailableProp.SubscribeMsgID"
+  },
+  {
+    "id": 4101,
+    "name": "FunctionAvailableProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4102,
+    "name": "ProductSNProp.GetMsgID"
+  },
+  {
+    "id": 4103,
+    "name": "ProductSNProp.NotifyMsgID"
+  },
+  {
+    "id": 4104,
+    "name": "ProductSNProp.GetRespMsgID"
+  },
+  {
+    "id": 4105,
+    "name": "ProductSNProp.SubscribeMsgID"
+  },
+  {
+    "id": 4106,
+    "name": "ProductSNProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4107,
+    "name": "ProductUACModeProp.GetMsgID"
+  },
+  {
+    "id": 4108,
+    "name": "ProductUACModeProp.NotifyMsgID"
+  },
+  {
+    "id": 4109,
+    "name": "ProductUACModeProp.GetRespMsgID"
+  },
+  {
+    "id": 4110,
+    "name": "ProductUACModeProp.SubscribeMsgID"
+  },
+  {
+    "id": 4111,
+    "name": "ProductUACModeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4112,
+    "name": "ProductBluetoothStateProp.GetMsgID"
+  },
+  {
+    "id": 4113,
+    "name": "ProductBluetoothStateProp.NotifyMsgID"
+  },
+  {
+    "id": 4114,
+    "name": "ProductBluetoothStateProp.GetRespMsgID"
+  },
+  {
+    "id": 4115,
+    "name": "ProductBluetoothStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 4116,
+    "name": "ProductBluetoothStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4117,
+    "name": "ProductBluetoothNameProp.GetMsgID"
+  },
+  {
+    "id": 4118,
+    "name": "ProductBluetoothNameProp.NotifyMsgID"
+  },
+  {
+    "id": 4119,
+    "name": "ProductBluetoothNameProp.GetRespMsgID"
+  },
+  {
+    "id": 4120,
+    "name": "ProductBluetoothNameProp.SubscribeMsgID"
+  },
+  {
+    "id": 4121,
+    "name": "ProductBluetoothNameProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4122,
+    "name": "ProductColorIDProp.GetMsgID"
+  },
+  {
+    "id": 4123,
+    "name": "ProductColorIDProp.NotifyMsgID"
+  },
+  {
+    "id": 4124,
+    "name": "ProductColorIDProp.GetRespMsgID"
+  },
+  {
+    "id": 4125,
+    "name": "ProductColorIDProp.SubscribeMsgID"
+  },
+  {
+    "id": 4126,
+    "name": "ProductColorIDProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4127,
+    "name": "ProductDongleStateProp.GetMsgID"
+  },
+  {
+    "id": 4128,
+    "name": "ProductDongleStateProp.NotifyMsgID"
+  },
+  {
+    "id": 4129,
+    "name": "ProductDongleStateProp.GetRespMsgID"
+  },
+  {
+    "id": 4130,
+    "name": "ProductDongleStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 4131,
+    "name": "ProductDongleStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4132,
+    "name": "BaseStationStateProp.GetMsgID"
+  },
+  {
+    "id": 4133,
+    "name": "BaseStationStateProp.NotifyMsgID"
+  },
+  {
+    "id": 4134,
+    "name": "BaseStationStateProp.GetRespMsgID"
+  },
+  {
+    "id": 4135,
+    "name": "BaseStationStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 4136,
+    "name": "BaseStationStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4137,
+    "name": "SupportGestureProp.GetMsgID"
+  },
+  {
+    "id": 4138,
+    "name": "SupportGestureProp.NotifyMsgID"
+  },
+  {
+    "id": 4139,
+    "name": "SupportGestureProp.GetRespMsgID"
+  },
+  {
+    "id": 4140,
+    "name": "SupportGestureProp.SubscribeMsgID"
+  },
+  {
+    "id": 4141,
+    "name": "SupportGestureProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4142,
+    "name": "SupportEqualizerProp.GetMsgID"
+  },
+  {
+    "id": 4143,
+    "name": "SupportEqualizerProp.NotifyMsgID"
+  },
+  {
+    "id": 4144,
+    "name": "SupportEqualizerProp.GetRespMsgID"
+  },
+  {
+    "id": 4145,
+    "name": "SupportEqualizerProp.SubscribeMsgID"
+  },
+  {
+    "id": 4146,
+    "name": "SupportEqualizerProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4147,
+    "name": "AudioSignalDetectRefreshProp.CommandMsgID"
+  },
+  {
+    "id": 4148,
+    "name": "WirelessConnectionStateProp.GetMsgID"
+  },
+  {
+    "id": 4149,
+    "name": "WirelessConnectionStateProp.SetMsgID"
+  },
+  {
+    "id": 4150,
+    "name": "WirelessConnectionStateProp.NotifyMsgID"
+  },
+  {
+    "id": 4151,
+    "name": "WirelessConnectionStateProp.GetRespMsgID"
+  },
+  {
+    "id": 4152,
+    "name": "WirelessConnectionStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 4153,
+    "name": "WirelessConnectionStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4154,
+    "name": "AutoPowerOffProp.GetMsgID"
+  },
+  {
+    "id": 4155,
+    "name": "AutoPowerOffProp.SetMsgID"
+  },
+  {
+    "id": 4156,
+    "name": "AutoPowerOffProp.NotifyMsgID"
+  },
+  {
+    "id": 4157,
+    "name": "AutoPowerOffProp.GetRespMsgID"
+  },
+  {
+    "id": 4158,
+    "name": "AutoPowerOffProp.SubscribeMsgID"
+  },
+  {
+    "id": 4159,
+    "name": "AutoPowerOffProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4160,
+    "name": "PolarPatternProp.GetMsgID"
+  },
+  {
+    "id": 4161,
+    "name": "PolarPatternProp.SetMsgID"
+  },
+  {
+    "id": 4162,
+    "name": "PolarPatternProp.NotifyMsgID"
+  },
+  {
+    "id": 4163,
+    "name": "PolarPatternProp.GetRespMsgID"
+  },
+  {
+    "id": 4164,
+    "name": "PolarPatternProp.SubscribeMsgID"
+  },
+  {
+    "id": 4165,
+    "name": "PolarPatternProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4166,
+    "name": "MicrophoneStateProp.GetMsgID"
+  },
+  {
+    "id": 4167,
+    "name": "MicrophoneStateProp.SetMsgID"
+  },
+  {
+    "id": 4168,
+    "name": "MicrophoneStateProp.NotifyMsgID"
+  },
+  {
+    "id": 4169,
+    "name": "MicrophoneStateProp.GetRespMsgID"
+  },
+  {
+    "id": 4170,
+    "name": "MicrophoneStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 4171,
+    "name": "MicrophoneStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4172,
+    "name": "GameChatBalanceProp.GetMsgID"
+  },
+  {
+    "id": 4173,
+    "name": "GameChatBalanceProp.SetMsgID"
+  },
+  {
+    "id": 4174,
+    "name": "GameChatBalanceProp.NotifyMsgID"
+  },
+  {
+    "id": 4175,
+    "name": "GameChatBalanceProp.GetRespMsgID"
+  },
+  {
+    "id": 4176,
+    "name": "GameChatBalanceProp.SubscribeMsgID"
+  },
+  {
+    "id": 4177,
+    "name": "GameChatBalanceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4178,
+    "name": "AudioVoiceBalanceProp.GetMsgID"
+  },
+  {
+    "id": 4179,
+    "name": "AudioVoiceBalanceProp.SetMsgID"
+  },
+  {
+    "id": 4180,
+    "name": "AudioVoiceBalanceProp.NotifyMsgID"
+  },
+  {
+    "id": 4181,
+    "name": "AudioVoiceBalanceProp.GetRespMsgID"
+  },
+  {
+    "id": 4182,
+    "name": "AudioVoiceBalanceProp.SubscribeMsgID"
+  },
+  {
+    "id": 4183,
+    "name": "AudioVoiceBalanceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4184,
+    "name": "FindMyDeviceProp.GetMsgID"
+  },
+  {
+    "id": 4185,
+    "name": "FindMyDeviceProp.SetMsgID"
+  },
+  {
+    "id": 4186,
+    "name": "FindMyDeviceProp.NotifyMsgID"
+  },
+  {
+    "id": 4187,
+    "name": "FindMyDeviceProp.GetRespMsgID"
+  },
+  {
+    "id": 4188,
+    "name": "FindMyDeviceProp.SubscribeMsgID"
+  },
+  {
+    "id": 4189,
+    "name": "FindMyDeviceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 4190,
+    "name": "FactoryResetProp.CommandMsgID"
+  },
+  {
+    "id": 4191,
+    "name": "FactoryResetAckProp.CommandMsgID"
+  },
+  {
+    "id": 4192,
+    "name": "RebootProp.CommandMsgID"
+  },
+  {
+    "id": 4193,
+    "name": "RebootAckProp.CommandMsgID"
+  },
+  {
+    "id": 4353,
+    "name": "CrashDumpInfoProp.CommandMsgID"
+  },
+  {
+    "id": 5377,
+    "name": "AUXBindReqProp.CommandMsgID"
+  },
+  {
+    "id": 5378,
+    "name": "AUXBindResProp.CommandMsgID"
+  },
+  {
+    "id": 5379,
+    "name": "AUXUnbindReqProp.CommandMsgID"
+  },
+  {
+    "id": 5380,
+    "name": "AUXBindStatusProp.GetMsgID"
+  },
+  {
+    "id": 5381,
+    "name": "AUXBindStatusProp.SetMsgID"
+  },
+  {
+    "id": 5382,
+    "name": "AUXBindStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 5383,
+    "name": "AUXInfoUpdateProp.CommandMsgID"
+  },
+  {
+    "id": 8193,
+    "name": "BluetoothStateProp.GetMsgID"
+  },
+  {
+    "id": 8194,
+    "name": "BluetoothStateProp.SetMsgID"
+  },
+  {
+    "id": 8195,
+    "name": "BluetoothStateProp.NotifyMsgID"
+  },
+  {
+    "id": 8196,
+    "name": "BluetoothStateProp.GetRespMsgID"
+  },
+  {
+    "id": 8197,
+    "name": "BluetoothStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 8198,
+    "name": "BluetoothStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8199,
+    "name": "RecenterProp.CommandMsgID"
+  },
+  {
+    "id": 8200,
+    "name": "RecenterProp.NotifyMsgID"
+  },
+  {
+    "id": 8201,
+    "name": "RecenterProp.SubscribeMsgID"
+  },
+  {
+    "id": 8202,
+    "name": "RecenterProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8203,
+    "name": "BatteryLevelProp.GetMsgID"
+  },
+  {
+    "id": 8204,
+    "name": "BatteryLevelProp.NotifyMsgID"
+  },
+  {
+    "id": 8205,
+    "name": "BatteryLevelProp.GetRespMsgID"
+  },
+  {
+    "id": 8206,
+    "name": "BatteryLevelProp.SubscribeMsgID"
+  },
+  {
+    "id": 8207,
+    "name": "BatteryLevelProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8208,
+    "name": "MicrophoneGainProp.GetMsgID"
+  },
+  {
+    "id": 8209,
+    "name": "MicrophoneGainProp.NotifyMsgID"
+  },
+  {
+    "id": 8210,
+    "name": "MicrophoneGainProp.GetRespMsgID"
+  },
+  {
+    "id": 8211,
+    "name": "MicrophoneGainProp.SubscribeMsgID"
+  },
+  {
+    "id": 8212,
+    "name": "MicrophoneGainProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8213,
+    "name": "HIDV1BatteryStatusProp.GetMsgID"
+  },
+  {
+    "id": 8214,
+    "name": "HIDV1BatteryStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 8215,
+    "name": "HIDV1BatteryStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 8216,
+    "name": "HIDV1BatteryStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 8217,
+    "name": "HIDV1BatteryStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8218,
+    "name": "EarbudPartnerConnectStatusProp.GetMsgID"
+  },
+  {
+    "id": 8219,
+    "name": "EarbudPartnerConnectStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 8220,
+    "name": "EarbudPartnerConnectStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 8221,
+    "name": "EarbudPartnerConnectStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 8222,
+    "name": "EarbudPartnerConnectStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8223,
+    "name": "HeartbeatProp.SetMsgID"
+  },
+  {
+    "id": 8224,
+    "name": "HostApplicationNotificationProp.SetMsgID"
+  },
+  {
+    "id": 8225,
+    "name": "EarbudInEarStatusProp.GetMsgID"
+  },
+  {
+    "id": 8226,
+    "name": "EarbudInEarStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 8227,
+    "name": "EarbudInEarStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 8228,
+    "name": "EarbudInEarStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 8229,
+    "name": "EarbudInEarStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8230,
+    "name": "StandaloneMicrophoneModeProp.GetMsgID"
+  },
+  {
+    "id": 8231,
+    "name": "StandaloneMicrophoneModeProp.SetMsgID"
+  },
+  {
+    "id": 8232,
+    "name": "StandaloneMicrophoneModeProp.NotifyMsgID"
+  },
+  {
+    "id": 8233,
+    "name": "StandaloneMicrophoneModeProp.GetRespMsgID"
+  },
+  {
+    "id": 8234,
+    "name": "StandaloneMicrophoneModeProp.SubscribeMsgID"
+  },
+  {
+    "id": 8235,
+    "name": "StandaloneMicrophoneModeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8236,
+    "name": "StandaloneMicrophoneVolumeProp.GetMsgID"
+  },
+  {
+    "id": 8237,
+    "name": "StandaloneMicrophoneVolumeProp.SetMsgID"
+  },
+  {
+    "id": 8238,
+    "name": "StandaloneMicrophoneVolumeProp.NotifyMsgID"
+  },
+  {
+    "id": 8239,
+    "name": "StandaloneMicrophoneVolumeProp.GetRespMsgID"
+  },
+  {
+    "id": 8240,
+    "name": "StandaloneMicrophoneVolumeProp.SubscribeMsgID"
+  },
+  {
+    "id": 8241,
+    "name": "StandaloneMicrophoneVolumeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8242,
+    "name": "EqualizerSettingsProp.GetMsgID"
+  },
+  {
+    "id": 8243,
+    "name": "EqualizerSettingsProp.SetMsgID"
+  },
+  {
+    "id": 8244,
+    "name": "EqualizerSettingsProp.NotifyMsgID"
+  },
+  {
+    "id": 8245,
+    "name": "EqualizerSettingsProp.GetRespMsgID"
+  },
+  {
+    "id": 8246,
+    "name": "EqualizerSettingsProp.SubscribeMsgID"
+  },
+  {
+    "id": 8247,
+    "name": "EqualizerSettingsProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8248,
+    "name": "HeadTrackerStateProp.GetMsgID"
+  },
+  {
+    "id": 8249,
+    "name": "HeadTrackerStateProp.SetMsgID"
+  },
+  {
+    "id": 8250,
+    "name": "HeadTrackerStateProp.NotifyMsgID"
+  },
+  {
+    "id": 8251,
+    "name": "HeadTrackerStateProp.GetRespMsgID"
+  },
+  {
+    "id": 8252,
+    "name": "HeadTrackerStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 8253,
+    "name": "HeadTrackerStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8254,
+    "name": "HardwareVersionProp.GetMsgID"
+  },
+  {
+    "id": 8255,
+    "name": "HardwareVersionProp.SetMsgID"
+  },
+  {
+    "id": 8256,
+    "name": "HardwareVersionProp.NotifyMsgID"
+  },
+  {
+    "id": 8257,
+    "name": "HardwareVersionProp.GetRespMsgID"
+  },
+  {
+    "id": 8258,
+    "name": "HardwareVersionProp.SubscribeMsgID"
+  },
+  {
+    "id": 8259,
+    "name": "HardwareVersionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8260,
+    "name": "HIDV1FirmwareVersionProp.GetMsgID"
+  },
+  {
+    "id": 8261,
+    "name": "HIDV1FirmwareVersionProp.NotifyMsgID"
+  },
+  {
+    "id": 8262,
+    "name": "HIDV1FirmwareVersionProp.GetRespMsgID"
+  },
+  {
+    "id": 8263,
+    "name": "HIDV1FirmwareVersionProp.SubscribeMsgID"
+  },
+  {
+    "id": 8264,
+    "name": "HIDV1FirmwareVersionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8265,
+    "name": "FirmwareUpgradeModeProp.SetMsgID"
+  },
+  {
+    "id": 8266,
+    "name": "FirmwareBlockProp.SetMsgID"
+  },
+  {
+    "id": 8267,
+    "name": "FirmwareVerifyProp.SetMsgID"
+  },
+  {
+    "id": 8268,
+    "name": "FirmwareStartUpgradeProp.SetMsgID"
+  },
+  {
+    "id": 8269,
+    "name": "SerialNumberProp.GetMsgID"
+  },
+  {
+    "id": 8270,
+    "name": "SerialNumberProp.SetMsgID"
+  },
+  {
+    "id": 8271,
+    "name": "SerialNumberProp.NotifyMsgID"
+  },
+  {
+    "id": 8272,
+    "name": "SerialNumberProp.GetRespMsgID"
+  },
+  {
+    "id": 8273,
+    "name": "SerialNumberProp.SubscribeMsgID"
+  },
+  {
+    "id": 8274,
+    "name": "SerialNumberProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8275,
+    "name": "ConnectedBluetoothDeviceNameProp.GetMsgID"
+  },
+  {
+    "id": 8276,
+    "name": "ConnectedBluetoothDeviceNameProp.NotifyMsgID"
+  },
+  {
+    "id": 8277,
+    "name": "ConnectedBluetoothDeviceNameProp.GetRespMsgID"
+  },
+  {
+    "id": 8278,
+    "name": "ConnectedBluetoothDeviceNameProp.SubscribeMsgID"
+  },
+  {
+    "id": 8279,
+    "name": "ConnectedBluetoothDeviceNameProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8280,
+    "name": "MicrophoneNoiseReductionStateProp.GetMsgID"
+  },
+  {
+    "id": 8281,
+    "name": "MicrophoneNoiseReductionStateProp.SetMsgID"
+  },
+  {
+    "id": 8282,
+    "name": "MicrophoneNoiseReductionStateProp.NotifyMsgID"
+  },
+  {
+    "id": 8283,
+    "name": "MicrophoneNoiseReductionStateProp.GetRespMsgID"
+  },
+  {
+    "id": 8284,
+    "name": "MicrophoneNoiseReductionStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 8285,
+    "name": "MicrophoneNoiseReductionStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8286,
+    "name": "MicrophoneAutomaticGainControlStateProp.GetMsgID"
+  },
+  {
+    "id": 8287,
+    "name": "MicrophoneAutomaticGainControlStateProp.SetMsgID"
+  },
+  {
+    "id": 8288,
+    "name": "MicrophoneAutomaticGainControlStateProp.NotifyMsgID"
+  },
+  {
+    "id": 8289,
+    "name": "MicrophoneAutomaticGainControlStateProp.GetRespMsgID"
+  },
+  {
+    "id": 8290,
+    "name": "MicrophoneAutomaticGainControlStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 8291,
+    "name": "MicrophoneAutomaticGainControlStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8292,
+    "name": "CalibrationStateProp.SetMsgID"
+  },
+  {
+    "id": 8293,
+    "name": "SpeechCueStateProp.GetMsgID"
+  },
+  {
+    "id": 8294,
+    "name": "SpeechCueStateProp.SetMsgID"
+  },
+  {
+    "id": 8295,
+    "name": "SpeechCueStateProp.NotifyMsgID"
+  },
+  {
+    "id": 8296,
+    "name": "SpeechCueStateProp.GetRespMsgID"
+  },
+  {
+    "id": 8297,
+    "name": "SpeechCueStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 8298,
+    "name": "SpeechCueStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8299,
+    "name": "CalibrationModeProp.CommandMsgID"
+  },
+  {
+    "id": 8300,
+    "name": "SurroundSoundProp.GetMsgID"
+  },
+  {
+    "id": 8301,
+    "name": "SurroundSoundProp.SetMsgID"
+  },
+  {
+    "id": 8302,
+    "name": "SurroundSoundProp.NotifyMsgID"
+  },
+  {
+    "id": 8303,
+    "name": "SurroundSoundProp.GetRespMsgID"
+  },
+  {
+    "id": 8304,
+    "name": "SurroundSoundProp.SubscribeMsgID"
+  },
+  {
+    "id": 8305,
+    "name": "SurroundSoundProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8306,
+    "name": "DeviceColorIDProp.GetMsgID"
+  },
+  {
+    "id": 8307,
+    "name": "DeviceColorIDProp.SetMsgID"
+  },
+  {
+    "id": 8308,
+    "name": "DeviceColorIDProp.NotifyMsgID"
+  },
+  {
+    "id": 8309,
+    "name": "DeviceColorIDProp.GetRespMsgID"
+  },
+  {
+    "id": 8310,
+    "name": "DeviceColorIDProp.SubscribeMsgID"
+  },
+  {
+    "id": 8311,
+    "name": "DeviceColorIDProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8312,
+    "name": "HIDV1GestureControlGetProp.GetMsgID"
+  },
+  {
+    "id": 8313,
+    "name": "HIDV1GestureControlGetProp.NotifyMsgID"
+  },
+  {
+    "id": 8314,
+    "name": "HIDV1GestureControlGetProp.GetRespMsgID"
+  },
+  {
+    "id": 8315,
+    "name": "HIDV1GestureControlGetProp.SubscribeMsgID"
+  },
+  {
+    "id": 8316,
+    "name": "HIDV1GestureControlGetProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 8317,
+    "name": "HIDV1GestureControlSetProp.SetMsgID"
+  },
+  {
+    "id": 8318,
+    "name": "HIDV1GestureControlGet360Prop.GetMsgID"
+  },
+  {
+    "id": 8319,
+    "name": "HIDV1GestureControlGet360Prop.NotifyMsgID"
+  },
+  {
+    "id": 8320,
+    "name": "HIDV1GestureControlGet360Prop.GetRespMsgID"
+  },
+  {
+    "id": 8321,
+    "name": "HIDV1GestureControlGet360Prop.SubscribeMsgID"
+  },
+  {
+    "id": 8322,
+    "name": "HIDV1GestureControlGet360Prop.UnsubscribeMsgID"
+  },
+  {
+    "id": 8323,
+    "name": "HIDV1GestureControlSet360Prop.SetMsgID"
+  },
+  {
+    "id": 8324,
+    "name": "RecenterAckProp.CommandMsgID"
+  },
+  {
+    "id": 8325,
+    "name": "HeartbeatAckProp.CommandMsgID"
+  },
+  {
+    "id": 8326,
+    "name": "HostApplicationNotificationAckProp.CommandMsgID"
+  },
+  {
+    "id": 8327,
+    "name": "LightingAnimationAckProp.CommandMsgID"
+  },
+  {
+    "id": 8328,
+    "name": "LightingKeyFrameAckProp.CommandMsgID"
+  },
+  {
+    "id": 12289,
+    "name": "HIDV2MicRealTimeVoiceGainProp.CommandMsgID"
+  },
+  {
+    "id": 12290,
+    "name": "HIDV2MicRealTimeVoiceGainProp.GetMsgID"
+  },
+  {
+    "id": 12291,
+    "name": "HIDV2MicRealTimeVoiceGainProp.NotifyMsgID"
+  },
+  {
+    "id": 12292,
+    "name": "HIDV2MicRealTimeVoiceGainProp.GetRespMsgID"
+  },
+  {
+    "id": 12293,
+    "name": "HIDV2MicRealTimeVoiceGainProp.SubscribeMsgID"
+  },
+  {
+    "id": 12294,
+    "name": "HIDV2MicRealTimeVoiceGainProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12295,
+    "name": "HIDV2MicSignalStrengthProp.CommandMsgID"
+  },
+  {
+    "id": 12296,
+    "name": "HIDV2MicSignalStrengthProp.GetMsgID"
+  },
+  {
+    "id": 12297,
+    "name": "HIDV2MicSignalStrengthProp.NotifyMsgID"
+  },
+  {
+    "id": 12298,
+    "name": "HIDV2MicSignalStrengthProp.GetRespMsgID"
+  },
+  {
+    "id": 12299,
+    "name": "HIDV2MicSignalStrengthProp.SubscribeMsgID"
+  },
+  {
+    "id": 12300,
+    "name": "HIDV2MicSignalStrengthProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12301,
+    "name": "HIDV2MicAvailabilityProp.CommandMsgID"
+  },
+  {
+    "id": 12302,
+    "name": "HIDV2MicAvailabilityProp.GetMsgID"
+  },
+  {
+    "id": 12303,
+    "name": "HIDV2MicAvailabilityProp.NotifyMsgID"
+  },
+  {
+    "id": 12304,
+    "name": "HIDV2MicAvailabilityProp.GetRespMsgID"
+  },
+  {
+    "id": 12305,
+    "name": "HIDV2MicAvailabilityProp.SubscribeMsgID"
+  },
+  {
+    "id": 12306,
+    "name": "HIDV2MicAvailabilityProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12307,
+    "name": "HIDV2FirmwareVersionProp.CommandMsgID"
+  },
+  {
+    "id": 12308,
+    "name": "HIDV2FirmwareVersionProp.NotifyMsgID"
+  },
+  {
+    "id": 12309,
+    "name": "HIDV2FirmwareVersionProp.SubscribeMsgID"
+  },
+  {
+    "id": 12310,
+    "name": "HIDV2FirmwareVersionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12311,
+    "name": "HIDV2AutoOffProp.CommandMsgID"
+  },
+  {
+    "id": 12312,
+    "name": "HIDV2AutoOffProp.SetMsgID"
+  },
+  {
+    "id": 12313,
+    "name": "HIDV2AutoOffProp.GetMsgID"
+  },
+  {
+    "id": 12314,
+    "name": "HIDV2AutoOffProp.NotifyMsgID"
+  },
+  {
+    "id": 12315,
+    "name": "HIDV2AutoOffProp.GetRespMsgID"
+  },
+  {
+    "id": 12316,
+    "name": "HIDV2AutoOffProp.SubscribeMsgID"
+  },
+  {
+    "id": 12317,
+    "name": "HIDV2AutoOffProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12318,
+    "name": "HIDV2SoundEffectProp.CommandMsgID"
+  },
+  {
+    "id": 12319,
+    "name": "HIDV2SoundEffectProp.SetMsgID"
+  },
+  {
+    "id": 12320,
+    "name": "HIDV2SoundEffectProp.GetMsgID"
+  },
+  {
+    "id": 12321,
+    "name": "HIDV2SoundEffectProp.NotifyMsgID"
+  },
+  {
+    "id": 12322,
+    "name": "HIDV2SoundEffectProp.GetRespMsgID"
+  },
+  {
+    "id": 12323,
+    "name": "HIDV2SoundEffectProp.SubscribeMsgID"
+  },
+  {
+    "id": 12324,
+    "name": "HIDV2SoundEffectProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12325,
+    "name": "HIDV2LedBrightnessProp.CommandMsgID"
+  },
+  {
+    "id": 12326,
+    "name": "HIDV2LedBrightnessProp.SetMsgID"
+  },
+  {
+    "id": 12327,
+    "name": "HIDV2LedBrightnessProp.GetMsgID"
+  },
+  {
+    "id": 12328,
+    "name": "HIDV2LedBrightnessProp.NotifyMsgID"
+  },
+  {
+    "id": 12329,
+    "name": "HIDV2LedBrightnessProp.GetRespMsgID"
+  },
+  {
+    "id": 12330,
+    "name": "HIDV2LedBrightnessProp.SubscribeMsgID"
+  },
+  {
+    "id": 12331,
+    "name": "HIDV2LedBrightnessProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12332,
+    "name": "HIDV2MicVoiceSettingsProp.CommandMsgID"
+  },
+  {
+    "id": 12333,
+    "name": "HIDV2MicVoiceSettingsProp.SetMsgID"
+  },
+  {
+    "id": 12334,
+    "name": "HIDV2MicVoiceSettingsProp.GetMsgID"
+  },
+  {
+    "id": 12335,
+    "name": "HIDV2MicVoiceSettingsProp.NotifyMsgID"
+  },
+  {
+    "id": 12336,
+    "name": "HIDV2MicVoiceSettingsProp.GetRespMsgID"
+  },
+  {
+    "id": 12337,
+    "name": "HIDV2MicVoiceSettingsProp.SubscribeMsgID"
+  },
+  {
+    "id": 12338,
+    "name": "HIDV2MicVoiceSettingsProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12339,
+    "name": "HIDV2CaseBatteryInfoProp.CommandMsgID"
+  },
+  {
+    "id": 12340,
+    "name": "HIDV2CaseBatteryInfoProp.SetMsgID"
+  },
+  {
+    "id": 12341,
+    "name": "HIDV2CaseBatteryInfoProp.GetMsgID"
+  },
+  {
+    "id": 12342,
+    "name": "HIDV2CaseBatteryInfoProp.NotifyMsgID"
+  },
+  {
+    "id": 12343,
+    "name": "HIDV2CaseBatteryInfoProp.GetRespMsgID"
+  },
+  {
+    "id": 12344,
+    "name": "HIDV2CaseBatteryInfoProp.SubscribeMsgID"
+  },
+  {
+    "id": 12345,
+    "name": "HIDV2CaseBatteryInfoProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12346,
+    "name": "HIDV2MicBatteryLevelProp.CommandMsgID"
+  },
+  {
+    "id": 12347,
+    "name": "HIDV2MicBatteryLevelProp.SetMsgID"
+  },
+  {
+    "id": 12348,
+    "name": "HIDV2MicBatteryLevelProp.GetMsgID"
+  },
+  {
+    "id": 12349,
+    "name": "HIDV2MicBatteryLevelProp.NotifyMsgID"
+  },
+  {
+    "id": 12350,
+    "name": "HIDV2MicBatteryLevelProp.GetRespMsgID"
+  },
+  {
+    "id": 12351,
+    "name": "HIDV2MicBatteryLevelProp.SubscribeMsgID"
+  },
+  {
+    "id": 12352,
+    "name": "HIDV2MicBatteryLevelProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12353,
+    "name": "HIDV2NoiseSuppressionStatusProp.CommandMsgID"
+  },
+  {
+    "id": 12354,
+    "name": "HIDV2NoiseSuppressionStatusProp.SetMsgID"
+  },
+  {
+    "id": 12355,
+    "name": "HIDV2NoiseSuppressionStatusProp.GetMsgID"
+  },
+  {
+    "id": 12356,
+    "name": "HIDV2NoiseSuppressionStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 12357,
+    "name": "HIDV2NoiseSuppressionStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 12358,
+    "name": "HIDV2NoiseSuppressionStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 12359,
+    "name": "HIDV2NoiseSuppressionStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12360,
+    "name": "HIDV2FactoryResetProp.CommandMsgID"
+  },
+  {
+    "id": 12361,
+    "name": "HIDV2FactoryResetProp.NotifyMsgID"
+  },
+  {
+    "id": 12362,
+    "name": "HIDV2FactoryResetProp.SubscribeMsgID"
+  },
+  {
+    "id": 12363,
+    "name": "HIDV2FactoryResetProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12545,
+    "name": "HIDV3MTUProp.GetMsgID"
+  },
+  {
+    "id": 12546,
+    "name": "HIDV3MTUProp.NotifyMsgID"
+  },
+  {
+    "id": 12547,
+    "name": "HIDV3MTUProp.GetRespMsgID"
+  },
+  {
+    "id": 12548,
+    "name": "HIDV3MTUProp.SubscribeMsgID"
+  },
+  {
+    "id": 12549,
+    "name": "HIDV3MTUProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12550,
+    "name": "HIDV3DynamicSurroundHeartbeatProp.CommandMsgID"
+  },
+  {
+    "id": 12551,
+    "name": "HIDV3SendPacketIntervalProp.GetMsgID"
+  },
+  {
+    "id": 12552,
+    "name": "HIDV3SendPacketIntervalProp.NotifyMsgID"
+  },
+  {
+    "id": 12553,
+    "name": "HIDV3SendPacketIntervalProp.GetRespMsgID"
+  },
+  {
+    "id": 12554,
+    "name": "HIDV3SendPacketIntervalProp.SubscribeMsgID"
+  },
+  {
+    "id": 12555,
+    "name": "HIDV3SendPacketIntervalProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12556,
+    "name": "HIDV3ProductIDProp.GetMsgID"
+  },
+  {
+    "id": 12557,
+    "name": "HIDV3ProductIDProp.NotifyMsgID"
+  },
+  {
+    "id": 12558,
+    "name": "HIDV3ProductIDProp.GetRespMsgID"
+  },
+  {
+    "id": 12559,
+    "name": "HIDV3ProductIDProp.SubscribeMsgID"
+  },
+  {
+    "id": 12560,
+    "name": "HIDV3ProductIDProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12561,
+    "name": "HIDV3ColorIDProp.GetMsgID"
+  },
+  {
+    "id": 12562,
+    "name": "HIDV3ColorIDProp.NotifyMsgID"
+  },
+  {
+    "id": 12563,
+    "name": "HIDV3ColorIDProp.GetRespMsgID"
+  },
+  {
+    "id": 12564,
+    "name": "HIDV3ColorIDProp.SubscribeMsgID"
+  },
+  {
+    "id": 12565,
+    "name": "HIDV3ColorIDProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12566,
+    "name": "HIDV3DeviceNameProp.GetMsgID"
+  },
+  {
+    "id": 12567,
+    "name": "HIDV3DeviceNameProp.NotifyMsgID"
+  },
+  {
+    "id": 12568,
+    "name": "HIDV3DeviceNameProp.GetRespMsgID"
+  },
+  {
+    "id": 12569,
+    "name": "HIDV3DeviceNameProp.SubscribeMsgID"
+  },
+  {
+    "id": 12570,
+    "name": "HIDV3DeviceNameProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12571,
+    "name": "HIDV3LeftDeviceSNProp.GetMsgID"
+  },
+  {
+    "id": 12572,
+    "name": "HIDV3LeftDeviceSNProp.NotifyMsgID"
+  },
+  {
+    "id": 12573,
+    "name": "HIDV3LeftDeviceSNProp.GetRespMsgID"
+  },
+  {
+    "id": 12574,
+    "name": "HIDV3LeftDeviceSNProp.SubscribeMsgID"
+  },
+  {
+    "id": 12575,
+    "name": "HIDV3LeftDeviceSNProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12576,
+    "name": "HIDV3FirmwareVersionProp.GetMsgID"
+  },
+  {
+    "id": 12577,
+    "name": "HIDV3FirmwareVersionProp.NotifyMsgID"
+  },
+  {
+    "id": 12578,
+    "name": "HIDV3FirmwareVersionProp.GetRespMsgID"
+  },
+  {
+    "id": 12579,
+    "name": "HIDV3FirmwareVersionProp.SubscribeMsgID"
+  },
+  {
+    "id": 12580,
+    "name": "HIDV3FirmwareVersionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12581,
+    "name": "HIDV3DongleFirmwareVersionProp.GetMsgID"
+  },
+  {
+    "id": 12582,
+    "name": "HIDV3DongleFirmwareVersionProp.NotifyMsgID"
+  },
+  {
+    "id": 12583,
+    "name": "HIDV3DongleFirmwareVersionProp.GetRespMsgID"
+  },
+  {
+    "id": 12584,
+    "name": "HIDV3DongleFirmwareVersionProp.SubscribeMsgID"
+  },
+  {
+    "id": 12585,
+    "name": "HIDV3DongleFirmwareVersionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12586,
+    "name": "HIDV3FullFirmwareVersionProp.GetMsgID"
+  },
+  {
+    "id": 12587,
+    "name": "HIDV3FullFirmwareVersionProp.NotifyMsgID"
+  },
+  {
+    "id": 12588,
+    "name": "HIDV3FullFirmwareVersionProp.GetRespMsgID"
+  },
+  {
+    "id": 12589,
+    "name": "HIDV3FullFirmwareVersionProp.SubscribeMsgID"
+  },
+  {
+    "id": 12590,
+    "name": "HIDV3FullFirmwareVersionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12591,
+    "name": "HIDV3LeftDeviceBatteryProp.GetMsgID"
+  },
+  {
+    "id": 12592,
+    "name": "HIDV3LeftDeviceBatteryProp.NotifyMsgID"
+  },
+  {
+    "id": 12593,
+    "name": "HIDV3LeftDeviceBatteryProp.GetRespMsgID"
+  },
+  {
+    "id": 12594,
+    "name": "HIDV3LeftDeviceBatteryProp.SubscribeMsgID"
+  },
+  {
+    "id": 12595,
+    "name": "HIDV3LeftDeviceBatteryProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12596,
+    "name": "HIDV3RightDeviceBatteryProp.GetMsgID"
+  },
+  {
+    "id": 12597,
+    "name": "HIDV3RightDeviceBatteryProp.NotifyMsgID"
+  },
+  {
+    "id": 12598,
+    "name": "HIDV3RightDeviceBatteryProp.GetRespMsgID"
+  },
+  {
+    "id": 12599,
+    "name": "HIDV3RightDeviceBatteryProp.SubscribeMsgID"
+  },
+  {
+    "id": 12600,
+    "name": "HIDV3RightDeviceBatteryProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12601,
+    "name": "HIDV3FactoryResetProp.CommandMsgID"
+  },
+  {
+    "id": 12602,
+    "name": "HIDV3SecondaryDeviceFactoryResetProp.CommandMsgID"
+  },
+  {
+    "id": 12603,
+    "name": "HIDV3MobileAppConnectionStatusProp.GetMsgID"
+  },
+  {
+    "id": 12604,
+    "name": "HIDV3MobileAppConnectionStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 12605,
+    "name": "HIDV3MobileAppConnectionStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 12606,
+    "name": "HIDV3MobileAppConnectionStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 12607,
+    "name": "HIDV3MobileAppConnectionStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12608,
+    "name": "HIDV3AutoPowerOffProp.GetMsgID"
+  },
+  {
+    "id": 12609,
+    "name": "HIDV3AutoPowerOffProp.SetMsgID"
+  },
+  {
+    "id": 12610,
+    "name": "HIDV3AutoPowerOffProp.NotifyMsgID"
+  },
+  {
+    "id": 12611,
+    "name": "HIDV3AutoPowerOffProp.GetRespMsgID"
+  },
+  {
+    "id": 12612,
+    "name": "HIDV3AutoPowerOffProp.SubscribeMsgID"
+  },
+  {
+    "id": 12613,
+    "name": "HIDV3AutoPowerOffProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12614,
+    "name": "HIDV3GameChatBalanceProp.GetMsgID"
+  },
+  {
+    "id": 12615,
+    "name": "HIDV3GameChatBalanceProp.SetMsgID"
+  },
+  {
+    "id": 12616,
+    "name": "HIDV3GameChatBalanceProp.NotifyMsgID"
+  },
+  {
+    "id": 12617,
+    "name": "HIDV3GameChatBalanceProp.GetRespMsgID"
+  },
+  {
+    "id": 12618,
+    "name": "HIDV3GameChatBalanceProp.SubscribeMsgID"
+  },
+  {
+    "id": 12619,
+    "name": "HIDV3GameChatBalanceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12620,
+    "name": "HIDV3SpatialSoundModeProp.GetMsgID"
+  },
+  {
+    "id": 12621,
+    "name": "HIDV3SpatialSoundModeProp.SetMsgID"
+  },
+  {
+    "id": 12622,
+    "name": "HIDV3SpatialSoundModeProp.NotifyMsgID"
+  },
+  {
+    "id": 12623,
+    "name": "HIDV3SpatialSoundModeProp.GetRespMsgID"
+  },
+  {
+    "id": 12624,
+    "name": "HIDV3SpatialSoundModeProp.SubscribeMsgID"
+  },
+  {
+    "id": 12625,
+    "name": "HIDV3SpatialSoundModeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12626,
+    "name": "HIDV3SidetoneProp.GetMsgID"
+  },
+  {
+    "id": 12627,
+    "name": "HIDV3SidetoneProp.SetMsgID"
+  },
+  {
+    "id": 12628,
+    "name": "HIDV3SidetoneProp.NotifyMsgID"
+  },
+  {
+    "id": 12629,
+    "name": "HIDV3SidetoneProp.GetRespMsgID"
+  },
+  {
+    "id": 12630,
+    "name": "HIDV3SidetoneProp.SubscribeMsgID"
+  },
+  {
+    "id": 12631,
+    "name": "HIDV3SidetoneProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12632,
+    "name": "HIDV3SpatialSoundRecenterProp.SetMsgID"
+  },
+  {
+    "id": 12633,
+    "name": "HIDV3BTConnectionStatusProp.GetMsgID"
+  },
+  {
+    "id": 12634,
+    "name": "HIDV3BTConnectionStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 12635,
+    "name": "HIDV3BTConnectionStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 12636,
+    "name": "HIDV3BTConnectionStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 12637,
+    "name": "HIDV3BTConnectionStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12638,
+    "name": "HIDV3HeadphoneAndDongleConnectionStatusProp.GetMsgID"
+  },
+  {
+    "id": 12639,
+    "name": "HIDV3HeadphoneAndDongleConnectionStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 12640,
+    "name": "HIDV3HeadphoneAndDongleConnectionStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 12641,
+    "name": "HIDV3HeadphoneAndDongleConnectionStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 12642,
+    "name": "HIDV3HeadphoneAndDongleConnectionStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12643,
+    "name": "HIDV3HostNamePairedToBTTDeviceProp.GetMsgID"
+  },
+  {
+    "id": 12644,
+    "name": "HIDV3HostNamePairedToBTTDeviceProp.NotifyMsgID"
+  },
+  {
+    "id": 12645,
+    "name": "HIDV3HostNamePairedToBTTDeviceProp.GetRespMsgID"
+  },
+  {
+    "id": 12646,
+    "name": "HIDV3HostNamePairedToBTTDeviceProp.SubscribeMsgID"
+  },
+  {
+    "id": 12647,
+    "name": "HIDV3HostNamePairedToBTTDeviceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12648,
+    "name": "HIDV3AudioSignalDetectProp.GetMsgID"
+  },
+  {
+    "id": 12649,
+    "name": "HIDV3AudioSignalDetectProp.NotifyMsgID"
+  },
+  {
+    "id": 12650,
+    "name": "HIDV3AudioSignalDetectProp.GetRespMsgID"
+  },
+  {
+    "id": 12651,
+    "name": "HIDV3AudioSignalDetectProp.SubscribeMsgID"
+  },
+  {
+    "id": 12652,
+    "name": "HIDV3AudioSignalDetectProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12653,
+    "name": "HIDV3MicAvailabilityProp.GetMsgID"
+  },
+  {
+    "id": 12654,
+    "name": "HIDV3MicAvailabilityProp.NotifyMsgID"
+  },
+  {
+    "id": 12655,
+    "name": "HIDV3MicAvailabilityProp.GetRespMsgID"
+  },
+  {
+    "id": 12656,
+    "name": "HIDV3MicAvailabilityProp.SubscribeMsgID"
+  },
+  {
+    "id": 12657,
+    "name": "HIDV3MicAvailabilityProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12658,
+    "name": "HIDV3MicSignalStrengthProp.GetMsgID"
+  },
+  {
+    "id": 12659,
+    "name": "HIDV3MicSignalStrengthProp.NotifyMsgID"
+  },
+  {
+    "id": 12660,
+    "name": "HIDV3MicSignalStrengthProp.GetRespMsgID"
+  },
+  {
+    "id": 12661,
+    "name": "HIDV3MicSignalStrengthProp.SubscribeMsgID"
+  },
+  {
+    "id": 12662,
+    "name": "HIDV3MicSignalStrengthProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12663,
+    "name": "HIDV3MicRealTimeVoiceLevelProp.GetMsgID"
+  },
+  {
+    "id": 12664,
+    "name": "HIDV3MicRealTimeVoiceLevelProp.NotifyMsgID"
+  },
+  {
+    "id": 12665,
+    "name": "HIDV3MicRealTimeVoiceLevelProp.GetRespMsgID"
+  },
+  {
+    "id": 12666,
+    "name": "HIDV3MicRealTimeVoiceLevelProp.SubscribeMsgID"
+  },
+  {
+    "id": 12667,
+    "name": "HIDV3MicRealTimeVoiceLevelProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12668,
+    "name": "HIDV3MicMuteProp.GetMsgID"
+  },
+  {
+    "id": 12669,
+    "name": "HIDV3MicMuteProp.SetMsgID"
+  },
+  {
+    "id": 12670,
+    "name": "HIDV3MicMuteProp.NotifyMsgID"
+  },
+  {
+    "id": 12671,
+    "name": "HIDV3MicMuteProp.GetRespMsgID"
+  },
+  {
+    "id": 12672,
+    "name": "HIDV3MicMuteProp.SubscribeMsgID"
+  },
+  {
+    "id": 12673,
+    "name": "HIDV3MicMuteProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12674,
+    "name": "HIDV3MicVolumeProp.GetMsgID"
+  },
+  {
+    "id": 12675,
+    "name": "HIDV3MicVolumeProp.SetMsgID"
+  },
+  {
+    "id": 12676,
+    "name": "HIDV3MicVolumeProp.NotifyMsgID"
+  },
+  {
+    "id": 12677,
+    "name": "HIDV3MicVolumeProp.GetRespMsgID"
+  },
+  {
+    "id": 12678,
+    "name": "HIDV3MicVolumeProp.SubscribeMsgID"
+  },
+  {
+    "id": 12679,
+    "name": "HIDV3MicVolumeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12680,
+    "name": "HIDV3MicEffectProp.GetMsgID"
+  },
+  {
+    "id": 12681,
+    "name": "HIDV3MicEffectProp.SetMsgID"
+  },
+  {
+    "id": 12682,
+    "name": "HIDV3MicEffectProp.NotifyMsgID"
+  },
+  {
+    "id": 12683,
+    "name": "HIDV3MicEffectProp.GetRespMsgID"
+  },
+  {
+    "id": 12684,
+    "name": "HIDV3MicEffectProp.SubscribeMsgID"
+  },
+  {
+    "id": 12685,
+    "name": "HIDV3MicEffectProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12686,
+    "name": "HIDV3MicEffectTestProp.GetMsgID"
+  },
+  {
+    "id": 12687,
+    "name": "HIDV3MicEffectTestProp.SetMsgID"
+  },
+  {
+    "id": 12688,
+    "name": "HIDV3MicEffectTestProp.NotifyMsgID"
+  },
+  {
+    "id": 12689,
+    "name": "HIDV3MicEffectTestProp.GetRespMsgID"
+  },
+  {
+    "id": 12690,
+    "name": "HIDV3MicEffectTestProp.SubscribeMsgID"
+  },
+  {
+    "id": 12691,
+    "name": "HIDV3MicEffectTestProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12692,
+    "name": "HIDV3OTAMTUProp.GetMsgID"
+  },
+  {
+    "id": 12693,
+    "name": "HIDV3OTAMTUProp.NotifyMsgID"
+  },
+  {
+    "id": 12694,
+    "name": "HIDV3OTAMTUProp.GetRespMsgID"
+  },
+  {
+    "id": 12695,
+    "name": "HIDV3OTAMTUProp.SubscribeMsgID"
+  },
+  {
+    "id": 12696,
+    "name": "HIDV3OTAMTUProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12697,
+    "name": "FOTAFinishedProp.CommandMsgID"
+  },
+  {
+    "id": 12698,
+    "name": "FOTAStopOTANotifyProp.CommandMsgID"
+  },
+  {
+    "id": 12699,
+    "name": "FOTAStopOTANotifyAckProp.CommandMsgID"
+  },
+  {
+    "id": 12700,
+    "name": "HIDV3LightingStateProp.GetMsgID"
+  },
+  {
+    "id": 12701,
+    "name": "HIDV3LightingStateProp.SetMsgID"
+  },
+  {
+    "id": 12702,
+    "name": "HIDV3LightingStateProp.NotifyMsgID"
+  },
+  {
+    "id": 12703,
+    "name": "HIDV3LightingStateProp.GetRespMsgID"
+  },
+  {
+    "id": 12704,
+    "name": "HIDV3LightingStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 12705,
+    "name": "HIDV3LightingStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12706,
+    "name": "HIDV3LightingInfoQueryProp.SetMsgID"
+  },
+  {
+    "id": 12707,
+    "name": "HIDV3LightingInfoProp.SetMsgID"
+  },
+  {
+    "id": 12708,
+    "name": "HIDV3EQInfoQueryProp.SetMsgID"
+  },
+  {
+    "id": 12709,
+    "name": "HIDV3EQInfoProp.SetMsgID"
+  },
+  {
+    "id": 12710,
+    "name": "HIDV3DesignEQRawDataProp.GetMsgID"
+  },
+  {
+    "id": 12711,
+    "name": "HIDV3DesignEQRawDataProp.NotifyMsgID"
+  },
+  {
+    "id": 12712,
+    "name": "HIDV3DesignEQRawDataProp.GetRespMsgID"
+  },
+  {
+    "id": 12713,
+    "name": "HIDV3DesignEQRawDataProp.SubscribeMsgID"
+  },
+  {
+    "id": 12714,
+    "name": "HIDV3DesignEQRawDataProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12715,
+    "name": "HIDV3EQCurveProp.SetMsgID"
+  },
+  {
+    "id": 12716,
+    "name": "HIDV3Dial1Prop.GetMsgID"
+  },
+  {
+    "id": 12717,
+    "name": "HIDV3Dial1Prop.SetMsgID"
+  },
+  {
+    "id": 12718,
+    "name": "HIDV3Dial1Prop.NotifyMsgID"
+  },
+  {
+    "id": 12719,
+    "name": "HIDV3Dial1Prop.GetRespMsgID"
+  },
+  {
+    "id": 12720,
+    "name": "HIDV3Dial1Prop.SubscribeMsgID"
+  },
+  {
+    "id": 12721,
+    "name": "HIDV3Dial1Prop.UnsubscribeMsgID"
+  },
+  {
+    "id": 12722,
+    "name": "HIDV3Dial2Prop.GetMsgID"
+  },
+  {
+    "id": 12723,
+    "name": "HIDV3Dial2Prop.SetMsgID"
+  },
+  {
+    "id": 12724,
+    "name": "HIDV3Dial2Prop.NotifyMsgID"
+  },
+  {
+    "id": 12725,
+    "name": "HIDV3Dial2Prop.GetRespMsgID"
+  },
+  {
+    "id": 12726,
+    "name": "HIDV3Dial2Prop.SubscribeMsgID"
+  },
+  {
+    "id": 12727,
+    "name": "HIDV3Dial2Prop.UnsubscribeMsgID"
+  },
+  {
+    "id": 12728,
+    "name": "HIDV3Button1ShortPressProp.GetMsgID"
+  },
+  {
+    "id": 12729,
+    "name": "HIDV3Button1ShortPressProp.SetMsgID"
+  },
+  {
+    "id": 12730,
+    "name": "HIDV3Button1ShortPressProp.NotifyMsgID"
+  },
+  {
+    "id": 12731,
+    "name": "HIDV3Button1ShortPressProp.GetRespMsgID"
+  },
+  {
+    "id": 12732,
+    "name": "HIDV3Button1ShortPressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12733,
+    "name": "HIDV3Button1ShortPressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12734,
+    "name": "HIDV3Button1LongPressProp.GetMsgID"
+  },
+  {
+    "id": 12735,
+    "name": "HIDV3Button1LongPressProp.SetMsgID"
+  },
+  {
+    "id": 12736,
+    "name": "HIDV3Button1LongPressProp.NotifyMsgID"
+  },
+  {
+    "id": 12737,
+    "name": "HIDV3Button1LongPressProp.GetRespMsgID"
+  },
+  {
+    "id": 12738,
+    "name": "HIDV3Button1LongPressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12739,
+    "name": "HIDV3Button1LongPressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12740,
+    "name": "HIDV3Button1DoublePressProp.GetMsgID"
+  },
+  {
+    "id": 12741,
+    "name": "HIDV3Button1DoublePressProp.SetMsgID"
+  },
+  {
+    "id": 12742,
+    "name": "HIDV3Button1DoublePressProp.NotifyMsgID"
+  },
+  {
+    "id": 12743,
+    "name": "HIDV3Button1DoublePressProp.GetRespMsgID"
+  },
+  {
+    "id": 12744,
+    "name": "HIDV3Button1DoublePressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12745,
+    "name": "HIDV3Button1DoublePressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12746,
+    "name": "HIDV3Button2ShortPressProp.GetMsgID"
+  },
+  {
+    "id": 12747,
+    "name": "HIDV3Button2ShortPressProp.SetMsgID"
+  },
+  {
+    "id": 12748,
+    "name": "HIDV3Button2ShortPressProp.NotifyMsgID"
+  },
+  {
+    "id": 12749,
+    "name": "HIDV3Button2ShortPressProp.GetRespMsgID"
+  },
+  {
+    "id": 12750,
+    "name": "HIDV3Button2ShortPressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12751,
+    "name": "HIDV3Button2ShortPressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12752,
+    "name": "HIDV3Button2LongPressProp.GetMsgID"
+  },
+  {
+    "id": 12753,
+    "name": "HIDV3Button2LongPressProp.SetMsgID"
+  },
+  {
+    "id": 12754,
+    "name": "HIDV3Button2LongPressProp.NotifyMsgID"
+  },
+  {
+    "id": 12755,
+    "name": "HIDV3Button2LongPressProp.GetRespMsgID"
+  },
+  {
+    "id": 12756,
+    "name": "HIDV3Button2LongPressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12757,
+    "name": "HIDV3Button2LongPressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12758,
+    "name": "HIDV3Button2DoublePressProp.GetMsgID"
+  },
+  {
+    "id": 12759,
+    "name": "HIDV3Button2DoublePressProp.SetMsgID"
+  },
+  {
+    "id": 12760,
+    "name": "HIDV3Button2DoublePressProp.NotifyMsgID"
+  },
+  {
+    "id": 12761,
+    "name": "HIDV3Button2DoublePressProp.GetRespMsgID"
+  },
+  {
+    "id": 12762,
+    "name": "HIDV3Button2DoublePressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12763,
+    "name": "HIDV3Button2DoublePressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12764,
+    "name": "HIDV3BaseStationRotateProp.GetMsgID"
+  },
+  {
+    "id": 12765,
+    "name": "HIDV3BaseStationRotateProp.SetMsgID"
+  },
+  {
+    "id": 12766,
+    "name": "HIDV3BaseStationRotateProp.NotifyMsgID"
+  },
+  {
+    "id": 12767,
+    "name": "HIDV3BaseStationRotateProp.GetRespMsgID"
+  },
+  {
+    "id": 12768,
+    "name": "HIDV3BaseStationRotateProp.SubscribeMsgID"
+  },
+  {
+    "id": 12769,
+    "name": "HIDV3BaseStationRotateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12770,
+    "name": "HIDV3BaseStationShortPressProp.GetMsgID"
+  },
+  {
+    "id": 12771,
+    "name": "HIDV3BaseStationShortPressProp.SetMsgID"
+  },
+  {
+    "id": 12772,
+    "name": "HIDV3BaseStationShortPressProp.NotifyMsgID"
+  },
+  {
+    "id": 12773,
+    "name": "HIDV3BaseStationShortPressProp.GetRespMsgID"
+  },
+  {
+    "id": 12774,
+    "name": "HIDV3BaseStationShortPressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12775,
+    "name": "HIDV3BaseStationShortPressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12776,
+    "name": "HIDV3BaseStationLongPressProp.GetMsgID"
+  },
+  {
+    "id": 12777,
+    "name": "HIDV3BaseStationLongPressProp.SetMsgID"
+  },
+  {
+    "id": 12778,
+    "name": "HIDV3BaseStationLongPressProp.NotifyMsgID"
+  },
+  {
+    "id": 12779,
+    "name": "HIDV3BaseStationLongPressProp.GetRespMsgID"
+  },
+  {
+    "id": 12780,
+    "name": "HIDV3BaseStationLongPressProp.SubscribeMsgID"
+  },
+  {
+    "id": 12781,
+    "name": "HIDV3BaseStationLongPressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12782,
+    "name": "HIDV3BaseStationPressAndRotateProp.GetMsgID"
+  },
+  {
+    "id": 12783,
+    "name": "HIDV3BaseStationPressAndRotateProp.SetMsgID"
+  },
+  {
+    "id": 12784,
+    "name": "HIDV3BaseStationPressAndRotateProp.NotifyMsgID"
+  },
+  {
+    "id": 12785,
+    "name": "HIDV3BaseStationPressAndRotateProp.GetRespMsgID"
+  },
+  {
+    "id": 12786,
+    "name": "HIDV3BaseStationPressAndRotateProp.SubscribeMsgID"
+  },
+  {
+    "id": 12787,
+    "name": "HIDV3BaseStationPressAndRotateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12788,
+    "name": "HIDV3BaseStationSequentialFeatureListProp.GetMsgID"
+  },
+  {
+    "id": 12789,
+    "name": "HIDV3BaseStationSequentialFeatureListProp.SetMsgID"
+  },
+  {
+    "id": 12790,
+    "name": "HIDV3BaseStationSequentialFeatureListProp.NotifyMsgID"
+  },
+  {
+    "id": 12791,
+    "name": "HIDV3BaseStationSequentialFeatureListProp.GetRespMsgID"
+  },
+  {
+    "id": 12792,
+    "name": "HIDV3BaseStationSequentialFeatureListProp.SubscribeMsgID"
+  },
+  {
+    "id": 12793,
+    "name": "HIDV3BaseStationSequentialFeatureListProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12794,
+    "name": "HIDV3BaseStationEQPresetSelectionProp.SetMsgID"
+  },
+  {
+    "id": 12795,
+    "name": "HIDV3BaseStationMicVolumeProp.GetMsgID"
+  },
+  {
+    "id": 12796,
+    "name": "HIDV3BaseStationMicVolumeProp.SetMsgID"
+  },
+  {
+    "id": 12797,
+    "name": "HIDV3BaseStationMicVolumeProp.NotifyMsgID"
+  },
+  {
+    "id": 12798,
+    "name": "HIDV3BaseStationMicVolumeProp.GetRespMsgID"
+  },
+  {
+    "id": 12799,
+    "name": "HIDV3BaseStationMicVolumeProp.SubscribeMsgID"
+  },
+  {
+    "id": 12800,
+    "name": "HIDV3BaseStationMicVolumeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 12801,
+    "name": "HIDV3HeadTrackingCalibrationStateProp.SetMsgID"
+  },
+  {
+    "id": 12802,
+    "name": "HIDV3MicrophoneCalibrationModeProp.SetMsgID"
+  },
+  {
+    "id": 12803,
+    "name": "HIDV3HeartbeatAckProp.CommandMsgID"
+  },
+  {
+    "id": 12804,
+    "name": "HIDV3FactoryResetAckProp.CommandMsgID"
+  },
+  {
+    "id": 12805,
+    "name": "HIDV3SpatialSoundRecenterAckProp.CommandMsgID"
+  },
+  {
+    "id": 12806,
+    "name": "HIDV3LightingInfoQueryAckProp.CommandMsgID"
+  },
+  {
+    "id": 12807,
+    "name": "HIDV3LightingInfoAckProp.CommandMsgID"
+  },
+  {
+    "id": 12808,
+    "name": "HIDV3EQInfoQueryAckProp.CommandMsgID"
+  },
+  {
+    "id": 12809,
+    "name": "HIDV3EQInfoAckProp.CommandMsgID"
+  },
+  {
+    "id": 12810,
+    "name": "HIDV3EQCurveAckProp.CommandMsgID"
+  },
+  {
+    "id": 12811,
+    "name": "HIDV3HeadTrackingCalibrationStateAckProp.CommandMsgID"
+  },
+  {
+    "id": 12812,
+    "name": "PairedInfoNotifyProp.GetMsgID"
+  },
+  {
+    "id": 12813,
+    "name": "PairedInfoNotifyProp.NotifyMsgID"
+  },
+  {
+    "id": 12814,
+    "name": "PairedInfoNotifyProp.GetRespMsgID"
+  },
+  {
+    "id": 12815,
+    "name": "PairedInfoNotifyProp.SubscribeMsgID"
+  },
+  {
+    "id": 12816,
+    "name": "PairedInfoNotifyProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16385,
+    "name": "IsEnableByPassModeProp.GetMsgID"
+  },
+  {
+    "id": 16386,
+    "name": "IsEnableByPassModeProp.SetMsgID"
+  },
+  {
+    "id": 16387,
+    "name": "IsEnableByPassModeProp.GetRespMsgID"
+  },
+  {
+    "id": 16388,
+    "name": "IsEnableByPassModeProp.NotifyMsgID"
+  },
+  {
+    "id": 16389,
+    "name": "IsEnableByPassModeProp.SubscribeMsgID"
+  },
+  {
+    "id": 16390,
+    "name": "IsEnableByPassModeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16391,
+    "name": "IsEnableByPassModeAEProp.GetMsgID"
+  },
+  {
+    "id": 16392,
+    "name": "IsEnableByPassModeAEProp.GetRespMsgID"
+  },
+  {
+    "id": 16393,
+    "name": "IsEnableByPassModeAEProp.NotifyMsgID"
+  },
+  {
+    "id": 16394,
+    "name": "IsEnableByPassModeAEProp.SubscribeMsgID"
+  },
+  {
+    "id": 16395,
+    "name": "IsEnableByPassModeAEProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16396,
+    "name": "APOTypeProp.GetMsgID"
+  },
+  {
+    "id": 16397,
+    "name": "APOTypeProp.SetMsgID"
+  },
+  {
+    "id": 16398,
+    "name": "APOTypeProp.GetRespMsgID"
+  },
+  {
+    "id": 16399,
+    "name": "APOTypeProp.NotifyMsgID"
+  },
+  {
+    "id": 16400,
+    "name": "APOTypeProp.SubscribeMsgID"
+  },
+  {
+    "id": 16401,
+    "name": "APOTypeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16402,
+    "name": "APOTypeAEProp.GetMsgID"
+  },
+  {
+    "id": 16403,
+    "name": "APOTypeAEProp.GetRespMsgID"
+  },
+  {
+    "id": 16404,
+    "name": "APOTypeAEProp.NotifyMsgID"
+  },
+  {
+    "id": 16405,
+    "name": "APOTypeAEProp.SubscribeMsgID"
+  },
+  {
+    "id": 16406,
+    "name": "APOTypeAEProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16407,
+    "name": "IsHeadTrackingOnProp.GetMsgID"
+  },
+  {
+    "id": 16408,
+    "name": "IsHeadTrackingOnProp.SetMsgID"
+  },
+  {
+    "id": 16409,
+    "name": "IsHeadTrackingOnProp.GetRespMsgID"
+  },
+  {
+    "id": 16410,
+    "name": "IsHeadTrackingOnProp.NotifyMsgID"
+  },
+  {
+    "id": 16411,
+    "name": "IsHeadTrackingOnProp.SubscribeMsgID"
+  },
+  {
+    "id": 16412,
+    "name": "IsHeadTrackingOnProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16413,
+    "name": "IsHeadTrackingOnAEProp.GetMsgID"
+  },
+  {
+    "id": 16414,
+    "name": "IsHeadTrackingOnAEProp.GetRespMsgID"
+  },
+  {
+    "id": 16415,
+    "name": "IsHeadTrackingOnAEProp.NotifyMsgID"
+  },
+  {
+    "id": 16416,
+    "name": "IsHeadTrackingOnAEProp.SubscribeMsgID"
+  },
+  {
+    "id": 16417,
+    "name": "IsHeadTrackingOnAEProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16418,
+    "name": "Adv3dDataProp.GetMsgID"
+  },
+  {
+    "id": 16419,
+    "name": "Adv3dDataProp.SetMsgID"
+  },
+  {
+    "id": 16420,
+    "name": "Adv3dDataProp.GetRespMsgID"
+  },
+  {
+    "id": 16421,
+    "name": "Adv3dDataProp.NotifyMsgID"
+  },
+  {
+    "id": 16422,
+    "name": "Adv3dDataProp.SubscribeMsgID"
+  },
+  {
+    "id": 16423,
+    "name": "Adv3dDataProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16424,
+    "name": "Adv3dDataAEProp.GetMsgID"
+  },
+  {
+    "id": 16425,
+    "name": "Adv3dDataAEProp.GetRespMsgID"
+  },
+  {
+    "id": 16426,
+    "name": "Adv3dDataAEProp.NotifyMsgID"
+  },
+  {
+    "id": 16427,
+    "name": "Adv3dDataAEProp.SubscribeMsgID"
+  },
+  {
+    "id": 16428,
+    "name": "Adv3dDataAEProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16429,
+    "name": "HIDV1HeadTrackingDataProp.NotifyMsgID"
+  },
+  {
+    "id": 16430,
+    "name": "HIDV1HeadTrackingDataProp.SubscribeMsgID"
+  },
+  {
+    "id": 16431,
+    "name": "HIDV1HeadTrackingDataProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16432,
+    "name": "HIDV3HeadTrackingDataProp.NotifyMsgID"
+  },
+  {
+    "id": 16433,
+    "name": "HIDV3HeadTrackingDataProp.SubscribeMsgID"
+  },
+  {
+    "id": 16434,
+    "name": "HIDV3HeadTrackingDataProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16435,
+    "name": "HeadTrackingDataAEProp.GetMsgID"
+  },
+  {
+    "id": 16436,
+    "name": "HeadTrackingDataAEProp.GetRespMsgID"
+  },
+  {
+    "id": 16437,
+    "name": "HeadTrackingDataAEProp.NotifyMsgID"
+  },
+  {
+    "id": 16438,
+    "name": "HeadTrackingDataAEProp.SubscribeMsgID"
+  },
+  {
+    "id": 16439,
+    "name": "HeadTrackingDataAEProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16440,
+    "name": "CalibrationDataProp.GetMsgID"
+  },
+  {
+    "id": 16441,
+    "name": "CalibrationDataProp.SetMsgID"
+  },
+  {
+    "id": 16442,
+    "name": "CalibrationDataProp.GetRespMsgID"
+  },
+  {
+    "id": 16443,
+    "name": "CalibrationDataProp.NotifyMsgID"
+  },
+  {
+    "id": 16444,
+    "name": "CalibrationDataProp.SubscribeMsgID"
+  },
+  {
+    "id": 16445,
+    "name": "CalibrationDataProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16446,
+    "name": "CalibrationDataAEProp.GetMsgID"
+  },
+  {
+    "id": 16447,
+    "name": "CalibrationDataAEProp.GetRespMsgID"
+  },
+  {
+    "id": 16448,
+    "name": "CalibrationDataAEProp.NotifyMsgID"
+  },
+  {
+    "id": 16449,
+    "name": "CalibrationDataAEProp.SubscribeMsgID"
+  },
+  {
+    "id": 16450,
+    "name": "CalibrationDataAEProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16451,
+    "name": "AESpatialEnableProp.GetMsgID"
+  },
+  {
+    "id": 16452,
+    "name": "AESpatialEnableProp.SetMsgID"
+  },
+  {
+    "id": 16453,
+    "name": "AESpatialEnableProp.NotifyMsgID"
+  },
+  {
+    "id": 16454,
+    "name": "AESpatialEnableProp.GetRespMsgID"
+  },
+  {
+    "id": 16455,
+    "name": "AESpatialEnableProp.SubscribeMsgID"
+  },
+  {
+    "id": 16456,
+    "name": "AESpatialEnableProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16457,
+    "name": "AESpkSceneProp.GetMsgID"
+  },
+  {
+    "id": 16458,
+    "name": "AESpkSceneProp.SetMsgID"
+  },
+  {
+    "id": 16459,
+    "name": "AESpkSceneProp.NotifyMsgID"
+  },
+  {
+    "id": 16460,
+    "name": "AESpkSceneProp.GetRespMsgID"
+  },
+  {
+    "id": 16461,
+    "name": "AESpkSceneProp.SubscribeMsgID"
+  },
+  {
+    "id": 16462,
+    "name": "AESpkSceneProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16463,
+    "name": "AESpkModeProp.GetMsgID"
+  },
+  {
+    "id": 16464,
+    "name": "AESpkModeProp.SetMsgID"
+  },
+  {
+    "id": 16465,
+    "name": "AESpkModeProp.NotifyMsgID"
+  },
+  {
+    "id": 16466,
+    "name": "AESpkModeProp.GetRespMsgID"
+  },
+  {
+    "id": 16467,
+    "name": "AESpkModeProp.SubscribeMsgID"
+  },
+  {
+    "id": 16468,
+    "name": "AESpkModeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 16469,
+    "name": "AESpkSpectrumProp.CommandMsgID"
+  },
+  {
+    "id": 16470,
+    "name": "SpectrumEffectEnableProp.CommandMsgID"
+  },
+  {
+    "id": 16471,
+    "name": "MicDspEffectEnableProp.CommandMsgID"
+  },
+  {
+    "id": 16472,
+    "name": "CaptureEqEffectEnableProp.CommandMsgID"
+  },
+  {
+    "id": 16473,
+    "name": "RenderDumpProp.CommandMsgID"
+  },
+  {
+    "id": 16474,
+    "name": "CaptureDumpProp.CommandMsgID"
+  },
+  {
+    "id": 17665,
+    "name": "FOTAProcessorStartInfoProp.GetMsgID"
+  },
+  {
+    "id": 17666,
+    "name": "FOTAProcessorStartInfoProp.GetRespMsgID"
+  },
+  {
+    "id": 17667,
+    "name": "FOTAProcessorStatusInfoProp.SetMsgID"
+  },
+  {
+    "id": 17668,
+    "name": "FOTAProcessorFinishedProp.CommandMsgID"
+  },
+  {
+    "id": 17669,
+    "name": "FOTAProcessorChipStartedProp.CommandMsgID"
+  },
+  {
+    "id": 17670,
+    "name": "FOTAProcessorChipProgressProp.SetMsgID"
+  },
+  {
+    "id": 17671,
+    "name": "FOTAProcessorChipFinishedProp.CommandMsgID"
+  },
+  {
+    "id": 17672,
+    "name": "FOTAProcessorDeviceDisconnectedProp.CommandMsgID"
+  },
+  {
+    "id": 17673,
+    "name": "FOTAProcessorDeviceConnectedProp.CommandMsgID"
+  },
+  {
+    "id": 17674,
+    "name": "FOTAControllerStartCmd.CommandMsgID"
+  },
+  {
+    "id": 17675,
+    "name": "FOTAControllerStartNextCmd.CommandMsgID"
+  },
+  {
+    "id": 17676,
+    "name": "FOTAControllerConfirmCmd.CommandMsgID"
+  },
+  {
+    "id": 17677,
+    "name": "FOTAControllerStatusProp.GetMsgID"
+  },
+  {
+    "id": 17678,
+    "name": "FOTAControllerStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 17679,
+    "name": "FOTAControllerStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 17680,
+    "name": "FOTAControllerStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 17681,
+    "name": "FOTAControllerStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 17682,
+    "name": "FOTAControllerProgressProp.GetMsgID"
+  },
+  {
+    "id": 17683,
+    "name": "FOTAControllerProgressProp.NotifyMsgID"
+  },
+  {
+    "id": 17684,
+    "name": "FOTAControllerProgressProp.GetRespMsgID"
+  },
+  {
+    "id": 17685,
+    "name": "FOTAControllerProgressProp.SubscribeMsgID"
+  },
+  {
+    "id": 17686,
+    "name": "FOTAControllerProgressProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 17687,
+    "name": "FOTAControllerDamageInfoProp.GetMsgID"
+  },
+  {
+    "id": 17688,
+    "name": "FOTAControllerDamageInfoProp.NotifyMsgID"
+  },
+  {
+    "id": 17689,
+    "name": "FOTAControllerDamageInfoProp.GetRespMsgID"
+  },
+  {
+    "id": 17690,
+    "name": "FOTAControllerDamageInfoProp.SubscribeMsgID"
+  },
+  {
+    "id": 17691,
+    "name": "FOTAControllerDamageInfoProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 17692,
+    "name": "GestureControlGetProp.GetMsgID"
+  },
+  {
+    "id": 17693,
+    "name": "GestureControlGetProp.NotifyMsgID"
+  },
+  {
+    "id": 17694,
+    "name": "GestureControlGetProp.GetRespMsgID"
+  },
+  {
+    "id": 17695,
+    "name": "GestureControlGetProp.SubscribeMsgID"
+  },
+  {
+    "id": 17696,
+    "name": "GestureControlGetProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 17697,
+    "name": "GestureControlSetProp.CommandMsgID"
+  },
+  {
+    "id": 18433,
+    "name": "FeedbackReqProp.CommandMsgID"
+  },
+  {
+    "id": 20481,
+    "name": "NoiseGateProp.GetMsgID"
+  },
+  {
+    "id": 20482,
+    "name": "NoiseGateProp.SetMsgID"
+  },
+  {
+    "id": 20483,
+    "name": "NoiseGateProp.NotifyMsgID"
+  },
+  {
+    "id": 20484,
+    "name": "NoiseGateProp.GetRespMsgID"
+  },
+  {
+    "id": 20485,
+    "name": "NoiseGateProp.SubscribeMsgID"
+  },
+  {
+    "id": 20486,
+    "name": "NoiseGateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20487,
+    "name": "NoiseReductionProp.GetMsgID"
+  },
+  {
+    "id": 20488,
+    "name": "NoiseReductionProp.SetMsgID"
+  },
+  {
+    "id": 20489,
+    "name": "NoiseReductionProp.NotifyMsgID"
+  },
+  {
+    "id": 20490,
+    "name": "NoiseReductionProp.GetRespMsgID"
+  },
+  {
+    "id": 20491,
+    "name": "NoiseReductionProp.SubscribeMsgID"
+  },
+  {
+    "id": 20492,
+    "name": "NoiseReductionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20493,
+    "name": "DRCProp.GetMsgID"
+  },
+  {
+    "id": 20494,
+    "name": "DRCProp.SetMsgID"
+  },
+  {
+    "id": 20495,
+    "name": "DRCProp.NotifyMsgID"
+  },
+  {
+    "id": 20496,
+    "name": "DRCProp.GetRespMsgID"
+  },
+  {
+    "id": 20497,
+    "name": "DRCProp.SubscribeMsgID"
+  },
+  {
+    "id": 20498,
+    "name": "DRCProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20499,
+    "name": "MicVolumeProp.CommandMsgID"
+  },
+  {
+    "id": 20500,
+    "name": "SoftwareSidetoneLevelProp.GetMsgID"
+  },
+  {
+    "id": 20501,
+    "name": "SoftwareSidetoneLevelProp.SetMsgID"
+  },
+  {
+    "id": 20502,
+    "name": "SoftwareSidetoneLevelProp.NotifyMsgID"
+  },
+  {
+    "id": 20503,
+    "name": "SoftwareSidetoneLevelProp.GetRespMsgID"
+  },
+  {
+    "id": 20504,
+    "name": "SoftwareSidetoneLevelProp.SubscribeMsgID"
+  },
+  {
+    "id": 20505,
+    "name": "SoftwareSidetoneLevelProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20506,
+    "name": "ANCStateProp.GetMsgID"
+  },
+  {
+    "id": 20507,
+    "name": "ANCStateProp.SetMsgID"
+  },
+  {
+    "id": 20508,
+    "name": "ANCStateProp.NotifyMsgID"
+  },
+  {
+    "id": 20509,
+    "name": "ANCStateProp.GetRespMsgID"
+  },
+  {
+    "id": 20510,
+    "name": "ANCStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 20511,
+    "name": "ANCStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20512,
+    "name": "SidetoneLevelProp.GetMsgID"
+  },
+  {
+    "id": 20513,
+    "name": "SidetoneLevelProp.SetMsgID"
+  },
+  {
+    "id": 20514,
+    "name": "SidetoneLevelProp.NotifyMsgID"
+  },
+  {
+    "id": 20515,
+    "name": "SidetoneLevelProp.GetRespMsgID"
+  },
+  {
+    "id": 20516,
+    "name": "SidetoneLevelProp.SubscribeMsgID"
+  },
+  {
+    "id": 20517,
+    "name": "SidetoneLevelProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20737,
+    "name": "HXSpatialSoundTypeProp.GetMsgID"
+  },
+  {
+    "id": 20738,
+    "name": "HXSpatialSoundTypeProp.SetMsgID"
+  },
+  {
+    "id": 20739,
+    "name": "HXSpatialSoundTypeProp.NotifyMsgID"
+  },
+  {
+    "id": 20740,
+    "name": "HXSpatialSoundTypeProp.GetRespMsgID"
+  },
+  {
+    "id": 20741,
+    "name": "HXSpatialSoundTypeProp.SubscribeMsgID"
+  },
+  {
+    "id": 20742,
+    "name": "HXSpatialSoundTypeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20743,
+    "name": "HXHeadSizeDataProp.GetMsgID"
+  },
+  {
+    "id": 20744,
+    "name": "HXHeadSizeDataProp.SetMsgID"
+  },
+  {
+    "id": 20745,
+    "name": "HXHeadSizeDataProp.NotifyMsgID"
+  },
+  {
+    "id": 20746,
+    "name": "HXHeadSizeDataProp.GetRespMsgID"
+  },
+  {
+    "id": 20747,
+    "name": "HXHeadSizeDataProp.SubscribeMsgID"
+  },
+  {
+    "id": 20748,
+    "name": "HXHeadSizeDataProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20749,
+    "name": "HXRoomTypeProp.GetMsgID"
+  },
+  {
+    "id": 20750,
+    "name": "HXRoomTypeProp.SetMsgID"
+  },
+  {
+    "id": 20751,
+    "name": "HXRoomTypeProp.NotifyMsgID"
+  },
+  {
+    "id": 20752,
+    "name": "HXRoomTypeProp.GetRespMsgID"
+  },
+  {
+    "id": 20753,
+    "name": "HXRoomTypeProp.SubscribeMsgID"
+  },
+  {
+    "id": 20754,
+    "name": "HXRoomTypeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20755,
+    "name": "HXCalibrationUsageProp.GetMsgID"
+  },
+  {
+    "id": 20756,
+    "name": "HXCalibrationUsageProp.SetMsgID"
+  },
+  {
+    "id": 20757,
+    "name": "HXCalibrationUsageProp.NotifyMsgID"
+  },
+  {
+    "id": 20758,
+    "name": "HXCalibrationUsageProp.GetRespMsgID"
+  },
+  {
+    "id": 20759,
+    "name": "HXCalibrationUsageProp.SubscribeMsgID"
+  },
+  {
+    "id": 20760,
+    "name": "HXCalibrationUsageProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20761,
+    "name": "HXCalibrationFileProp.GetMsgID"
+  },
+  {
+    "id": 20762,
+    "name": "HXCalibrationFileProp.SetMsgID"
+  },
+  {
+    "id": 20763,
+    "name": "HXCalibrationFileProp.NotifyMsgID"
+  },
+  {
+    "id": 20764,
+    "name": "HXCalibrationFileProp.GetRespMsgID"
+  },
+  {
+    "id": 20765,
+    "name": "HXCalibrationFileProp.SubscribeMsgID"
+  },
+  {
+    "id": 20766,
+    "name": "HXCalibrationFileProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20767,
+    "name": "AESpatialSoundTypeProp.GetMsgID"
+  },
+  {
+    "id": 20768,
+    "name": "AESpatialSoundTypeProp.SetMsgID"
+  },
+  {
+    "id": 20769,
+    "name": "AESpatialSoundTypeProp.NotifyMsgID"
+  },
+  {
+    "id": 20770,
+    "name": "AESpatialSoundTypeProp.GetRespMsgID"
+  },
+  {
+    "id": 20771,
+    "name": "AESpatialSoundTypeProp.SubscribeMsgID"
+  },
+  {
+    "id": 20772,
+    "name": "AESpatialSoundTypeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20773,
+    "name": "AESceneTypeProp.GetMsgID"
+  },
+  {
+    "id": 20774,
+    "name": "AESceneTypeProp.SetMsgID"
+  },
+  {
+    "id": 20775,
+    "name": "AESceneTypeProp.NotifyMsgID"
+  },
+  {
+    "id": 20776,
+    "name": "AESceneTypeProp.GetRespMsgID"
+  },
+  {
+    "id": 20777,
+    "name": "AESceneTypeProp.SubscribeMsgID"
+  },
+  {
+    "id": 20778,
+    "name": "AESceneTypeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20779,
+    "name": "RecenterConfirmedProp.GetMsgID"
+  },
+  {
+    "id": 20780,
+    "name": "RecenterConfirmedProp.SetMsgID"
+  },
+  {
+    "id": 20781,
+    "name": "RecenterConfirmedProp.NotifyMsgID"
+  },
+  {
+    "id": 20782,
+    "name": "RecenterConfirmedProp.GetRespMsgID"
+  },
+  {
+    "id": 20783,
+    "name": "RecenterConfirmedProp.SubscribeMsgID"
+  },
+  {
+    "id": 20784,
+    "name": "RecenterConfirmedProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20993,
+    "name": "RenderEqCurrentPresetProp.GetMsgID"
+  },
+  {
+    "id": 20994,
+    "name": "RenderEqCurrentPresetProp.NotifyMsgID"
+  },
+  {
+    "id": 20995,
+    "name": "RenderEqCurrentPresetProp.GetRespMsgID"
+  },
+  {
+    "id": 20996,
+    "name": "RenderEqCurrentPresetProp.SubscribeMsgID"
+  },
+  {
+    "id": 20997,
+    "name": "RenderEqCurrentPresetProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 20998,
+    "name": "RenderEqPresetsProp.GetMsgID"
+  },
+  {
+    "id": 20999,
+    "name": "RenderEqPresetsProp.NotifyMsgID"
+  },
+  {
+    "id": 21000,
+    "name": "RenderEqPresetsProp.GetRespMsgID"
+  },
+  {
+    "id": 21001,
+    "name": "RenderEqPresetsProp.SubscribeMsgID"
+  },
+  {
+    "id": 21002,
+    "name": "RenderEqPresetsProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21003,
+    "name": "RenderEqCopyPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21004,
+    "name": "RenderEqRemovePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21005,
+    "name": "RenderEqUpdatePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21006,
+    "name": "RenderEqSwitchPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21007,
+    "name": "RenderEqResetPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21008,
+    "name": "RenderEqRenamePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21009,
+    "name": "CaptureEqCurrentPresetProp.GetMsgID"
+  },
+  {
+    "id": 21010,
+    "name": "CaptureEqCurrentPresetProp.NotifyMsgID"
+  },
+  {
+    "id": 21011,
+    "name": "CaptureEqCurrentPresetProp.GetRespMsgID"
+  },
+  {
+    "id": 21012,
+    "name": "CaptureEqCurrentPresetProp.SubscribeMsgID"
+  },
+  {
+    "id": 21013,
+    "name": "CaptureEqCurrentPresetProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21014,
+    "name": "CaptureEqPresetsProp.GetMsgID"
+  },
+  {
+    "id": 21015,
+    "name": "CaptureEqPresetsProp.NotifyMsgID"
+  },
+  {
+    "id": 21016,
+    "name": "CaptureEqPresetsProp.GetRespMsgID"
+  },
+  {
+    "id": 21017,
+    "name": "CaptureEqPresetsProp.SubscribeMsgID"
+  },
+  {
+    "id": 21018,
+    "name": "CaptureEqPresetsProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21019,
+    "name": "CaptureEqCopyPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21020,
+    "name": "CaptureEqRemovePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21021,
+    "name": "CaptureEqUpdatePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21022,
+    "name": "CaptureEqSwitchPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21023,
+    "name": "CaptureEqResetPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21024,
+    "name": "CaptureEqRenamePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21025,
+    "name": "LightCurrentPresetProp.GetMsgID"
+  },
+  {
+    "id": 21026,
+    "name": "LightCurrentPresetProp.NotifyMsgID"
+  },
+  {
+    "id": 21027,
+    "name": "LightCurrentPresetProp.GetRespMsgID"
+  },
+  {
+    "id": 21028,
+    "name": "LightCurrentPresetProp.SubscribeMsgID"
+  },
+  {
+    "id": 21029,
+    "name": "LightCurrentPresetProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21030,
+    "name": "LightPresetsProp.GetMsgID"
+  },
+  {
+    "id": 21031,
+    "name": "LightPresetsProp.NotifyMsgID"
+  },
+  {
+    "id": 21032,
+    "name": "LightPresetsProp.GetRespMsgID"
+  },
+  {
+    "id": 21033,
+    "name": "LightPresetsProp.SubscribeMsgID"
+  },
+  {
+    "id": 21034,
+    "name": "LightPresetsProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21035,
+    "name": "LightCopyPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21036,
+    "name": "LightRemovePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21037,
+    "name": "LightUpdatePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21038,
+    "name": "LightSwitchPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21039,
+    "name": "LightResetPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21040,
+    "name": "LightRenamePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21041,
+    "name": "ProfileCurrentPresetProp.GetMsgID"
+  },
+  {
+    "id": 21042,
+    "name": "ProfileCurrentPresetProp.NotifyMsgID"
+  },
+  {
+    "id": 21043,
+    "name": "ProfileCurrentPresetProp.GetRespMsgID"
+  },
+  {
+    "id": 21044,
+    "name": "ProfileCurrentPresetProp.SubscribeMsgID"
+  },
+  {
+    "id": 21045,
+    "name": "ProfileCurrentPresetProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21046,
+    "name": "ProfilePresetUpdateProp.CommandMsgID"
+  },
+  {
+    "id": 21047,
+    "name": "ProfilePresetsProp.GetMsgID"
+  },
+  {
+    "id": 21048,
+    "name": "ProfilePresetsProp.NotifyMsgID"
+  },
+  {
+    "id": 21049,
+    "name": "ProfilePresetsProp.GetRespMsgID"
+  },
+  {
+    "id": 21050,
+    "name": "ProfilePresetsProp.SubscribeMsgID"
+  },
+  {
+    "id": 21051,
+    "name": "ProfilePresetsProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21052,
+    "name": "ProfileAddPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21053,
+    "name": "ProfileSavePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21054,
+    "name": "ProfileCopyPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21055,
+    "name": "ProfileRemovePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21056,
+    "name": "ProfileUpdatePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21057,
+    "name": "ProfileSwitchPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21058,
+    "name": "ProfileResetPresetProp.CommandMsgID"
+  },
+  {
+    "id": 21059,
+    "name": "ProfileRestorePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21060,
+    "name": "ProfileRenamePresetProp.CommandMsgID"
+  },
+  {
+    "id": 21061,
+    "name": "ProfileDataChangedProp.GetMsgID"
+  },
+  {
+    "id": 21062,
+    "name": "ProfileDataChangedProp.NotifyMsgID"
+  },
+  {
+    "id": 21063,
+    "name": "ProfileDataChangedProp.GetRespMsgID"
+  },
+  {
+    "id": 21064,
+    "name": "ProfileDataChangedProp.SubscribeMsgID"
+  },
+  {
+    "id": 21065,
+    "name": "ProfileDataChangedProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21066,
+    "name": "ProfileBackupCurrentSettingProp.GetMsgID"
+  },
+  {
+    "id": 21067,
+    "name": "ProfileBackupCurrentSettingProp.NotifyMsgID"
+  },
+  {
+    "id": 21068,
+    "name": "ProfileBackupCurrentSettingProp.GetRespMsgID"
+  },
+  {
+    "id": 21069,
+    "name": "ProfileBackupCurrentSettingProp.SubscribeMsgID"
+  },
+  {
+    "id": 21070,
+    "name": "ProfileBackupCurrentSettingProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21071,
+    "name": "CaptureEQResetAllProp.CommandMsgID"
+  },
+  {
+    "id": 21072,
+    "name": "CardLayoutOrderListProp.GetMsgID"
+  },
+  {
+    "id": 21073,
+    "name": "CardLayoutOrderListProp.SetMsgID"
+  },
+  {
+    "id": 21074,
+    "name": "CardLayoutOrderListProp.NotifyMsgID"
+  },
+  {
+    "id": 21075,
+    "name": "CardLayoutOrderListProp.GetRespMsgID"
+  },
+  {
+    "id": 21076,
+    "name": "CardLayoutOrderListProp.SubscribeMsgID"
+  },
+  {
+    "id": 21077,
+    "name": "CardLayoutOrderListProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21078,
+    "name": "SaveProfileResultNotifyProp.GetMsgID"
+  },
+  {
+    "id": 21079,
+    "name": "SaveProfileResultNotifyProp.NotifyMsgID"
+  },
+  {
+    "id": 21080,
+    "name": "SaveProfileResultNotifyProp.GetRespMsgID"
+  },
+  {
+    "id": 21081,
+    "name": "SaveProfileResultNotifyProp.SubscribeMsgID"
+  },
+  {
+    "id": 21082,
+    "name": "SaveProfileResultNotifyProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21083,
+    "name": "ProfileSyncEnableProp.GetMsgID"
+  },
+  {
+    "id": 21084,
+    "name": "ProfileSyncEnableProp.SetMsgID"
+  },
+  {
+    "id": 21085,
+    "name": "ProfileSyncEnableProp.NotifyMsgID"
+  },
+  {
+    "id": 21086,
+    "name": "ProfileSyncEnableProp.GetRespMsgID"
+  },
+  {
+    "id": 21087,
+    "name": "ProfileSyncEnableProp.SubscribeMsgID"
+  },
+  {
+    "id": 21088,
+    "name": "ProfileSyncEnableProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21089,
+    "name": "SwitchProfileReminderProp.GetMsgID"
+  },
+  {
+    "id": 21090,
+    "name": "SwitchProfileReminderProp.SetMsgID"
+  },
+  {
+    "id": 21091,
+    "name": "SwitchProfileReminderProp.NotifyMsgID"
+  },
+  {
+    "id": 21092,
+    "name": "SwitchProfileReminderProp.GetRespMsgID"
+  },
+  {
+    "id": 21093,
+    "name": "SwitchProfileReminderProp.SubscribeMsgID"
+  },
+  {
+    "id": 21094,
+    "name": "SwitchProfileReminderProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21095,
+    "name": "ProfileSyncStateProp.GetMsgID"
+  },
+  {
+    "id": 21096,
+    "name": "ProfileSyncStateProp.SetMsgID"
+  },
+  {
+    "id": 21097,
+    "name": "ProfileSyncStateProp.NotifyMsgID"
+  },
+  {
+    "id": 21098,
+    "name": "ProfileSyncStateProp.GetRespMsgID"
+  },
+  {
+    "id": 21099,
+    "name": "ProfileSyncStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 21100,
+    "name": "ProfileSyncStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21101,
+    "name": "ProfileSelectionTypeProp.GetMsgID"
+  },
+  {
+    "id": 21102,
+    "name": "ProfileSelectionTypeProp.SetMsgID"
+  },
+  {
+    "id": 21103,
+    "name": "ProfileSelectionTypeProp.NotifyMsgID"
+  },
+  {
+    "id": 21104,
+    "name": "ProfileSelectionTypeProp.GetRespMsgID"
+  },
+  {
+    "id": 21105,
+    "name": "ProfileSelectionTypeProp.SubscribeMsgID"
+  },
+  {
+    "id": 21106,
+    "name": "ProfileSelectionTypeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21107,
+    "name": "ProfileRecentlyUsedProp.GetMsgID"
+  },
+  {
+    "id": 21108,
+    "name": "ProfileRecentlyUsedProp.SetMsgID"
+  },
+  {
+    "id": 21109,
+    "name": "ProfileRecentlyUsedProp.NotifyMsgID"
+  },
+  {
+    "id": 21110,
+    "name": "ProfileRecentlyUsedProp.GetRespMsgID"
+  },
+  {
+    "id": 21111,
+    "name": "ProfileRecentlyUsedProp.SubscribeMsgID"
+  },
+  {
+    "id": 21112,
+    "name": "ProfileRecentlyUsedProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21113,
+    "name": "SwitchProfileFinishedProp.CommandMsgID"
+  },
+  {
+    "id": 21114,
+    "name": "ProfileSyncFinishedProp.CommandMsgID"
+  },
+  {
+    "id": 21115,
+    "name": "ProfilePushProp.GetMsgID"
+  },
+  {
+    "id": 21116,
+    "name": "ProfilePushProp.SetMsgID"
+  },
+  {
+    "id": 21117,
+    "name": "ProfilePushProp.NotifyMsgID"
+  },
+  {
+    "id": 21118,
+    "name": "ProfilePushProp.GetRespMsgID"
+  },
+  {
+    "id": 21119,
+    "name": "ProfilePushProp.SubscribeMsgID"
+  },
+  {
+    "id": 21120,
+    "name": "ProfilePushProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21121,
+    "name": "ProfileGetProp.CommandMsgID"
+  },
+  {
+    "id": 21122,
+    "name": "SyncUserProfileProp.CommandMsgID"
+  },
+  {
+    "id": 21123,
+    "name": "ResolveProfileConflictProp.CommandMsgID"
+  },
+  {
+    "id": 21249,
+    "name": "RenderEqualizerDataProp.CommandMsgID"
+  },
+  {
+    "id": 21250,
+    "name": "CaptureEqualizerDataProp.CommandMsgID"
+  },
+  {
+    "id": 21761,
+    "name": "ChatCaptureDeviceProp.GetMsgID"
+  },
+  {
+    "id": 21762,
+    "name": "ChatCaptureDeviceProp.NotifyMsgID"
+  },
+  {
+    "id": 21763,
+    "name": "ChatCaptureDeviceProp.GetRespMsgID"
+  },
+  {
+    "id": 21764,
+    "name": "ChatCaptureDeviceProp.SubscribeMsgID"
+  },
+  {
+    "id": 21765,
+    "name": "ChatCaptureDeviceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21766,
+    "name": "ChatRenderDeviceProp.GetMsgID"
+  },
+  {
+    "id": 21767,
+    "name": "ChatRenderDeviceProp.NotifyMsgID"
+  },
+  {
+    "id": 21768,
+    "name": "ChatRenderDeviceProp.GetRespMsgID"
+  },
+  {
+    "id": 21769,
+    "name": "ChatRenderDeviceProp.SubscribeMsgID"
+  },
+  {
+    "id": 21770,
+    "name": "ChatRenderDeviceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21771,
+    "name": "GameRenderDeviceProp.GetMsgID"
+  },
+  {
+    "id": 21772,
+    "name": "GameRenderDeviceProp.NotifyMsgID"
+  },
+  {
+    "id": 21773,
+    "name": "GameRenderDeviceProp.GetRespMsgID"
+  },
+  {
+    "id": 21774,
+    "name": "GameRenderDeviceProp.SubscribeMsgID"
+  },
+  {
+    "id": 21775,
+    "name": "GameRenderDeviceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 21776,
+    "name": "CalibrationCaptureDeviceProp.CommandMsgID"
+  },
+  {
+    "id": 21777,
+    "name": "CalibrationRenderDeviceProp.CommandMsgID"
+  },
+  {
+    "id": 22017,
+    "name": "LightingDataProp.CommandMsgID"
+  },
+  {
+    "id": 22018,
+    "name": "VUMeterStateProp.GetMsgID"
+  },
+  {
+    "id": 22019,
+    "name": "VUMeterStateProp.SetMsgID"
+  },
+  {
+    "id": 22020,
+    "name": "VUMeterStateProp.NotifyMsgID"
+  },
+  {
+    "id": 22021,
+    "name": "VUMeterStateProp.GetRespMsgID"
+  },
+  {
+    "id": 22022,
+    "name": "VUMeterStateProp.SubscribeMsgID"
+  },
+  {
+    "id": 22023,
+    "name": "VUMeterStateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 22024,
+    "name": "VUMeterStateFistSwitchProp.GetMsgID"
+  },
+  {
+    "id": 22025,
+    "name": "VUMeterStateFistSwitchProp.SetMsgID"
+  },
+  {
+    "id": 22026,
+    "name": "VUMeterStateFistSwitchProp.NotifyMsgID"
+  },
+  {
+    "id": 22027,
+    "name": "VUMeterStateFistSwitchProp.GetRespMsgID"
+  },
+  {
+    "id": 22028,
+    "name": "VUMeterStateFistSwitchProp.SubscribeMsgID"
+  },
+  {
+    "id": 22029,
+    "name": "VUMeterStateFistSwitchProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 22030,
+    "name": "LightingOnProp.GetMsgID"
+  },
+  {
+    "id": 22031,
+    "name": "LightingOnProp.SetMsgID"
+  },
+  {
+    "id": 22032,
+    "name": "LightingOnProp.NotifyMsgID"
+  },
+  {
+    "id": 22033,
+    "name": "LightingOnProp.GetRespMsgID"
+  },
+  {
+    "id": 22034,
+    "name": "LightingOnProp.SubscribeMsgID"
+  },
+  {
+    "id": 22035,
+    "name": "LightingOnProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 22036,
+    "name": "LightingBirghtnessProp.GetMsgID"
+  },
+  {
+    "id": 22037,
+    "name": "LightingBirghtnessProp.SetMsgID"
+  },
+  {
+    "id": 22038,
+    "name": "LightingBirghtnessProp.NotifyMsgID"
+  },
+  {
+    "id": 22039,
+    "name": "LightingBirghtnessProp.GetRespMsgID"
+  },
+  {
+    "id": 22040,
+    "name": "LightingBirghtnessProp.SubscribeMsgID"
+  },
+  {
+    "id": 22041,
+    "name": "LightingBirghtnessProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 22042,
+    "name": "Lighting2DataListProp.GetMsgID"
+  },
+  {
+    "id": 22043,
+    "name": "Lighting2DataListProp.NotifyMsgID"
+  },
+  {
+    "id": 22044,
+    "name": "Lighting2DataListProp.GetRespMsgID"
+  },
+  {
+    "id": 22045,
+    "name": "Lighting2DataListProp.SubscribeMsgID"
+  },
+  {
+    "id": 22046,
+    "name": "Lighting2DataListProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 22047,
+    "name": "Lighting2DataUpdateProp.SetMsgID"
+  },
+  {
+    "id": 22048,
+    "name": "Lighting2DataSelectedListProp.GetMsgID"
+  },
+  {
+    "id": 22049,
+    "name": "Lighting2DataSelectedListProp.SetMsgID"
+  },
+  {
+    "id": 22050,
+    "name": "Lighting2DataSelectedListProp.NotifyMsgID"
+  },
+  {
+    "id": 22051,
+    "name": "Lighting2DataSelectedListProp.GetRespMsgID"
+  },
+  {
+    "id": 22052,
+    "name": "Lighting2DataSelectedListProp.SubscribeMsgID"
+  },
+  {
+    "id": 22053,
+    "name": "Lighting2DataSelectedListProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 24577,
+    "name": "AccountStateInfoProp.GetMsgID"
+  },
+  {
+    "id": 24578,
+    "name": "AccountStateInfoProp.NotifyMsgID"
+  },
+  {
+    "id": 24579,
+    "name": "AccountStateInfoProp.GetRespMsgID"
+  },
+  {
+    "id": 24580,
+    "name": "AccountStateInfoProp.SubscribeMsgID"
+  },
+  {
+    "id": 24581,
+    "name": "AccountStateInfoProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 24582,
+    "name": "AccountUserInfoProp.GetMsgID"
+  },
+  {
+    "id": 24583,
+    "name": "AccountUserInfoProp.NotifyMsgID"
+  },
+  {
+    "id": 24584,
+    "name": "AccountUserInfoProp.GetRespMsgID"
+  },
+  {
+    "id": 24585,
+    "name": "AccountUserInfoProp.SubscribeMsgID"
+  },
+  {
+    "id": 24586,
+    "name": "AccountUserInfoProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 24587,
+    "name": "AccountExistsProp.CommandMsgID"
+  },
+  {
+    "id": 24588,
+    "name": "RegisterAccountProp.CommandMsgID"
+  },
+  {
+    "id": 24589,
+    "name": "LoginAccountProp.CommandMsgID"
+  },
+  {
+    "id": 24590,
+    "name": "UpdateUserInfoProp.CommandMsgID"
+  },
+  {
+    "id": 24591,
+    "name": "ResetPasswordProp.CommandMsgID"
+  },
+  {
+    "id": 24592,
+    "name": "LogoutAccountProp.CommandMsgID"
+  },
+  {
+    "id": 24593,
+    "name": "CheckAccountSupportedProp.CommandMsgID"
+  },
+  {
+    "id": 24594,
+    "name": "ResetPreStatusProp.CommandMsgID"
+  },
+  {
+    "id": 26369,
+    "name": "CalibrationDeviceReadyProp.GetMsgID"
+  },
+  {
+    "id": 26370,
+    "name": "CalibrationDeviceReadyProp.NotifyMsgID"
+  },
+  {
+    "id": 26371,
+    "name": "CalibrationDeviceReadyProp.GetRespMsgID"
+  },
+  {
+    "id": 26372,
+    "name": "CalibrationDeviceReadyProp.SubscribeMsgID"
+  },
+  {
+    "id": 26373,
+    "name": "CalibrationDeviceReadyProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26374,
+    "name": "CalibrationAudioDeviceReadyProp.GetMsgID"
+  },
+  {
+    "id": 26375,
+    "name": "CalibrationAudioDeviceReadyProp.NotifyMsgID"
+  },
+  {
+    "id": 26376,
+    "name": "CalibrationAudioDeviceReadyProp.GetRespMsgID"
+  },
+  {
+    "id": 26377,
+    "name": "CalibrationAudioDeviceReadyProp.SubscribeMsgID"
+  },
+  {
+    "id": 26378,
+    "name": "CalibrationAudioDeviceReadyProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26379,
+    "name": "CalibrationAudioDeviceUnreadyProp.GetMsgID"
+  },
+  {
+    "id": 26380,
+    "name": "CalibrationAudioDeviceUnreadyProp.NotifyMsgID"
+  },
+  {
+    "id": 26381,
+    "name": "CalibrationAudioDeviceUnreadyProp.GetRespMsgID"
+  },
+  {
+    "id": 26382,
+    "name": "CalibrationAudioDeviceUnreadyProp.SubscribeMsgID"
+  },
+  {
+    "id": 26383,
+    "name": "CalibrationAudioDeviceUnreadyProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26384,
+    "name": "CalibrationAudioSignalDetectProp.GetMsgID"
+  },
+  {
+    "id": 26385,
+    "name": "CalibrationAudioSignalDetectProp.NotifyMsgID"
+  },
+  {
+    "id": 26386,
+    "name": "CalibrationAudioSignalDetectProp.GetRespMsgID"
+  },
+  {
+    "id": 26387,
+    "name": "CalibrationAudioSignalDetectProp.SubscribeMsgID"
+  },
+  {
+    "id": 26388,
+    "name": "CalibrationAudioSignalDetectProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26389,
+    "name": "CalibrationStartProp.CommandMsgID"
+  },
+  {
+    "id": 26390,
+    "name": "CalibrationStopProp.CommandMsgID"
+  },
+  {
+    "id": 26391,
+    "name": "CalibrationLeftEarPlaybackProp.CommandMsgID"
+  },
+  {
+    "id": 26392,
+    "name": "CalibrationRightEarPlaybackProp.CommandMsgID"
+  },
+  {
+    "id": 26393,
+    "name": "CalibrationRequestAudioSignalDetectProp.CommandMsgID"
+  },
+  {
+    "id": 26625,
+    "name": "SotaStatusProp.GetMsgID"
+  },
+  {
+    "id": 26626,
+    "name": "SotaStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 26627,
+    "name": "SotaStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 26628,
+    "name": "SotaStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 26629,
+    "name": "SotaStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26630,
+    "name": "SotaDownloadPercentProp.GetMsgID"
+  },
+  {
+    "id": 26631,
+    "name": "SotaDownloadPercentProp.NotifyMsgID"
+  },
+  {
+    "id": 26632,
+    "name": "SotaDownloadPercentProp.GetRespMsgID"
+  },
+  {
+    "id": 26633,
+    "name": "SotaDownloadPercentProp.SubscribeMsgID"
+  },
+  {
+    "id": 26634,
+    "name": "SotaDownloadPercentProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26635,
+    "name": "SotaAvailableProp.GetMsgID"
+  },
+  {
+    "id": 26636,
+    "name": "SotaAvailableProp.NotifyMsgID"
+  },
+  {
+    "id": 26637,
+    "name": "SotaAvailableProp.GetRespMsgID"
+  },
+  {
+    "id": 26638,
+    "name": "SotaAvailableProp.SubscribeMsgID"
+  },
+  {
+    "id": 26639,
+    "name": "SotaAvailableProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26640,
+    "name": "SotaErrorProp.GetMsgID"
+  },
+  {
+    "id": 26641,
+    "name": "SotaErrorProp.NotifyMsgID"
+  },
+  {
+    "id": 26642,
+    "name": "SotaErrorProp.GetRespMsgID"
+  },
+  {
+    "id": 26643,
+    "name": "SotaErrorProp.SubscribeMsgID"
+  },
+  {
+    "id": 26644,
+    "name": "SotaErrorProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26645,
+    "name": "SOTAVersionProp.GetMsgID"
+  },
+  {
+    "id": 26646,
+    "name": "SOTAVersionProp.NotifyMsgID"
+  },
+  {
+    "id": 26647,
+    "name": "SOTAVersionProp.GetRespMsgID"
+  },
+  {
+    "id": 26648,
+    "name": "SOTAVersionProp.SubscribeMsgID"
+  },
+  {
+    "id": 26649,
+    "name": "SOTAVersionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26650,
+    "name": "SotaStartDownloadProp.CommandMsgID"
+  },
+  {
+    "id": 26651,
+    "name": "SotaStartUpdateProp.CommandMsgID"
+  },
+  {
+    "id": 26652,
+    "name": "SotaAutoUpdateProp.GetMsgID"
+  },
+  {
+    "id": 26653,
+    "name": "SotaAutoUpdateProp.SetMsgID"
+  },
+  {
+    "id": 26654,
+    "name": "SotaAutoUpdateProp.NotifyMsgID"
+  },
+  {
+    "id": 26655,
+    "name": "SotaAutoUpdateProp.GetRespMsgID"
+  },
+  {
+    "id": 26656,
+    "name": "SotaAutoUpdateProp.SubscribeMsgID"
+  },
+  {
+    "id": 26657,
+    "name": "SotaAutoUpdateProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26658,
+    "name": "SotaCheckAvailableProp.CommandMsgID"
+  },
+  {
+    "id": 26659,
+    "name": "SotaFullReleaseNoteProp.GetMsgID"
+  },
+  {
+    "id": 26660,
+    "name": "SotaFullReleaseNoteProp.NotifyMsgID"
+  },
+  {
+    "id": 26661,
+    "name": "SotaFullReleaseNoteProp.GetRespMsgID"
+  },
+  {
+    "id": 26662,
+    "name": "SotaFullReleaseNoteProp.SubscribeMsgID"
+  },
+  {
+    "id": 26663,
+    "name": "SotaFullReleaseNoteProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 26664,
+    "name": "SotaModeProp.GetMsgID"
+  },
+  {
+    "id": 26665,
+    "name": "SotaModeProp.SetMsgID"
+  },
+  {
+    "id": 26666,
+    "name": "SotaModeProp.NotifyMsgID"
+  },
+  {
+    "id": 26667,
+    "name": "SotaModeProp.GetRespMsgID"
+  },
+  {
+    "id": 26668,
+    "name": "SotaModeProp.SubscribeMsgID"
+  },
+  {
+    "id": 26669,
+    "name": "SotaModeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28673,
+    "name": "OverlayEnableProp.GetMsgID"
+  },
+  {
+    "id": 28674,
+    "name": "OverlayEnableProp.SetMsgID"
+  },
+  {
+    "id": 28675,
+    "name": "OverlayEnableProp.NotifyMsgID"
+  },
+  {
+    "id": 28676,
+    "name": "OverlayEnableProp.GetRespMsgID"
+  },
+  {
+    "id": 28677,
+    "name": "OverlayEnableProp.SubscribeMsgID"
+  },
+  {
+    "id": 28678,
+    "name": "OverlayEnableProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28679,
+    "name": "OverlaySizeProp.GetMsgID"
+  },
+  {
+    "id": 28680,
+    "name": "OverlaySizeProp.SetMsgID"
+  },
+  {
+    "id": 28681,
+    "name": "OverlaySizeProp.NotifyMsgID"
+  },
+  {
+    "id": 28682,
+    "name": "OverlaySizeProp.GetRespMsgID"
+  },
+  {
+    "id": 28683,
+    "name": "OverlaySizeProp.SubscribeMsgID"
+  },
+  {
+    "id": 28684,
+    "name": "OverlaySizeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28685,
+    "name": "OverlayOpacityProp.GetMsgID"
+  },
+  {
+    "id": 28686,
+    "name": "OverlayOpacityProp.SetMsgID"
+  },
+  {
+    "id": 28687,
+    "name": "OverlayOpacityProp.NotifyMsgID"
+  },
+  {
+    "id": 28688,
+    "name": "OverlayOpacityProp.GetRespMsgID"
+  },
+  {
+    "id": 28689,
+    "name": "OverlayOpacityProp.SubscribeMsgID"
+  },
+  {
+    "id": 28690,
+    "name": "OverlayOpacityProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28691,
+    "name": "OverlayDurationProp.GetMsgID"
+  },
+  {
+    "id": 28692,
+    "name": "OverlayDurationProp.SetMsgID"
+  },
+  {
+    "id": 28693,
+    "name": "OverlayDurationProp.NotifyMsgID"
+  },
+  {
+    "id": 28694,
+    "name": "OverlayDurationProp.GetRespMsgID"
+  },
+  {
+    "id": 28695,
+    "name": "OverlayDurationProp.SubscribeMsgID"
+  },
+  {
+    "id": 28696,
+    "name": "OverlayDurationProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28697,
+    "name": "OverlayPositionProp.GetMsgID"
+  },
+  {
+    "id": 28698,
+    "name": "OverlayPositionProp.SetMsgID"
+  },
+  {
+    "id": 28699,
+    "name": "OverlayPositionProp.NotifyMsgID"
+  },
+  {
+    "id": 28700,
+    "name": "OverlayPositionProp.GetRespMsgID"
+  },
+  {
+    "id": 28701,
+    "name": "OverlayPositionProp.SubscribeMsgID"
+  },
+  {
+    "id": 28702,
+    "name": "OverlayPositionProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28703,
+    "name": "OverlayFrameProp.GetMsgID"
+  },
+  {
+    "id": 28704,
+    "name": "OverlayFrameProp.SetMsgID"
+  },
+  {
+    "id": 28705,
+    "name": "OverlayFrameProp.NotifyMsgID"
+  },
+  {
+    "id": 28706,
+    "name": "OverlayFrameProp.GetRespMsgID"
+  },
+  {
+    "id": 28707,
+    "name": "OverlayFrameProp.SubscribeMsgID"
+  },
+  {
+    "id": 28708,
+    "name": "OverlayFrameProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28709,
+    "name": "OSCProductOfflineProp.CommandMsgID"
+  },
+  {
+    "id": 28710,
+    "name": "OverlayContentSelProp.GetMsgID"
+  },
+  {
+    "id": 28711,
+    "name": "OverlayContentSelProp.NotifyMsgID"
+  },
+  {
+    "id": 28712,
+    "name": "OverlayContentSelProp.GetRespMsgID"
+  },
+  {
+    "id": 28713,
+    "name": "OverlayContentSelProp.SubscribeMsgID"
+  },
+  {
+    "id": 28714,
+    "name": "OverlayContentSelProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28715,
+    "name": "OverlayGameChatBalanceProp.GetMsgID"
+  },
+  {
+    "id": 28716,
+    "name": "OverlayGameChatBalanceProp.NotifyMsgID"
+  },
+  {
+    "id": 28717,
+    "name": "OverlayGameChatBalanceProp.GetRespMsgID"
+  },
+  {
+    "id": 28718,
+    "name": "OverlayGameChatBalanceProp.SubscribeMsgID"
+  },
+  {
+    "id": 28719,
+    "name": "OverlayGameChatBalanceProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28720,
+    "name": "OverlayMicVolumeProp.GetMsgID"
+  },
+  {
+    "id": 28721,
+    "name": "OverlayMicVolumeProp.NotifyMsgID"
+  },
+  {
+    "id": 28722,
+    "name": "OverlayMicVolumeProp.GetRespMsgID"
+  },
+  {
+    "id": 28723,
+    "name": "OverlayMicVolumeProp.SubscribeMsgID"
+  },
+  {
+    "id": 28724,
+    "name": "OverlayMicVolumeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28725,
+    "name": "OverlayMicMuteStatusProp.GetMsgID"
+  },
+  {
+    "id": 28726,
+    "name": "OverlayMicMuteStatusProp.NotifyMsgID"
+  },
+  {
+    "id": 28727,
+    "name": "OverlayMicMuteStatusProp.GetRespMsgID"
+  },
+  {
+    "id": 28728,
+    "name": "OverlayMicMuteStatusProp.SubscribeMsgID"
+  },
+  {
+    "id": 28729,
+    "name": "OverlayMicMuteStatusProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28730,
+    "name": "OverlayRenderVolumeProp.GetMsgID"
+  },
+  {
+    "id": 28731,
+    "name": "OverlayRenderVolumeProp.NotifyMsgID"
+  },
+  {
+    "id": 28732,
+    "name": "OverlayRenderVolumeProp.GetRespMsgID"
+  },
+  {
+    "id": 28733,
+    "name": "OverlayRenderVolumeProp.SubscribeMsgID"
+  },
+  {
+    "id": 28734,
+    "name": "OverlayRenderVolumeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28735,
+    "name": "OverlaySidetoneProp.GetMsgID"
+  },
+  {
+    "id": 28736,
+    "name": "OverlaySidetoneProp.NotifyMsgID"
+  },
+  {
+    "id": 28737,
+    "name": "OverlaySidetoneProp.GetRespMsgID"
+  },
+  {
+    "id": 28738,
+    "name": "OverlaySidetoneProp.SubscribeMsgID"
+  },
+  {
+    "id": 28739,
+    "name": "OverlaySidetoneProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28740,
+    "name": "OverlayEqualizerProp.GetMsgID"
+  },
+  {
+    "id": 28741,
+    "name": "OverlayEqualizerProp.NotifyMsgID"
+  },
+  {
+    "id": 28742,
+    "name": "OverlayEqualizerProp.GetRespMsgID"
+  },
+  {
+    "id": 28743,
+    "name": "OverlayEqualizerProp.SubscribeMsgID"
+  },
+  {
+    "id": 28744,
+    "name": "OverlayEqualizerProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28745,
+    "name": "OverlaySpatialSoundModeProp.GetMsgID"
+  },
+  {
+    "id": 28746,
+    "name": "OverlaySpatialSoundModeProp.NotifyMsgID"
+  },
+  {
+    "id": 28747,
+    "name": "OverlaySpatialSoundModeProp.GetRespMsgID"
+  },
+  {
+    "id": 28748,
+    "name": "OverlaySpatialSoundModeProp.SubscribeMsgID"
+  },
+  {
+    "id": 28749,
+    "name": "OverlaySpatialSoundModeProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28750,
+    "name": "OverlayANCProp.GetMsgID"
+  },
+  {
+    "id": 28751,
+    "name": "OverlayANCProp.NotifyMsgID"
+  },
+  {
+    "id": 28752,
+    "name": "OverlayANCProp.GetRespMsgID"
+  },
+  {
+    "id": 28753,
+    "name": "OverlayANCProp.SubscribeMsgID"
+  },
+  {
+    "id": 28754,
+    "name": "OverlayANCProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28755,
+    "name": "OverlayAAProp.GetMsgID"
+  },
+  {
+    "id": 28756,
+    "name": "OverlayAAProp.NotifyMsgID"
+  },
+  {
+    "id": 28757,
+    "name": "OverlayAAProp.GetRespMsgID"
+  },
+  {
+    "id": 28758,
+    "name": "OverlayAAProp.SubscribeMsgID"
+  },
+  {
+    "id": 28759,
+    "name": "OverlayAAProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28760,
+    "name": "OverlayBatteryProp.GetMsgID"
+  },
+  {
+    "id": 28761,
+    "name": "OverlayBatteryProp.NotifyMsgID"
+  },
+  {
+    "id": 28762,
+    "name": "OverlayBatteryProp.GetRespMsgID"
+  },
+  {
+    "id": 28763,
+    "name": "OverlayBatteryProp.SubscribeMsgID"
+  },
+  {
+    "id": 28764,
+    "name": "OverlayBatteryProp.UnsubscribeMsgID"
+  },
+  {
+    "id": 28765,
+    "name": "LanguageCodeProp.CommandMsgID"
+  },
+  {
+    "id": 28766,
+    "name": "PCPowerStateProp.SetMsgID"
+  },
+  {
+    "id": 29441,
+    "name": "APPLanguageCodeProp.CommandMsgID"
+  }
+]

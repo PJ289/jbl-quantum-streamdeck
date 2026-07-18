@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Set Profile</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        color: #e6e6e6;
+        font-family: system-ui, Segoe UI, sans-serif;
+        font-size: 12px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+      }
+      .label {
+        width: 90px;
+        flex-shrink: 0;
+        opacity: 0.9;
+      }
+      .field {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        gap: 6px;
+      }
+      select {
+        flex: 1;
+        min-width: 0;
+        background: #2d2d2d;
+        color: #fff;
+        border: 1px solid #444;
+        border-radius: 4px;
+        padding: 6px 8px;
+      }
+      button {
+        background: #3a3a3a;
+        color: #fff;
+        border: 1px solid #555;
+        border-radius: 4px;
+        padding: 6px 10px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      button:hover {
+        background: #4a4a4a;
+      }
+      .hint {
+        padding: 0 12px 12px 110px;
+        opacity: 0.7;
+        line-height: 1.35;
+      }
+      .status {
+        padding: 0 12px 10px 110px;
+        color: #f0c674;
+        min-height: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="label">Perfil</div>
+      <div class="field">
+        <select id="profileSelect">
+          <option value="">Cargando…</option>
+        </select>
+        <button id="refreshBtn" type="button" title="Actualizar lista">↻</button>
+      </div>
+    </div>
+    <div id="status" class="status"></div>
+    <div class="hint">Elige un perfil de Quantum Engine. El botón usa el color del perfil y se ilumina cuando ese perfil está activo.</div>
+
+    <script>
+      let websocket = null;
+      let uuid = null;
+      let actionInfo = {};
+      let settings = {};
+
+      const selectEl = document.getElementById("profileSelect");
+      const statusEl = document.getElementById("status");
+      const refreshBtn = document.getElementById("refreshBtn");
+
+      function setStatus(text) {
+        statusEl.textContent = text || "";
+      }
+
+      function send(event, payload) {
+        if (!websocket || websocket.readyState !== WebSocket.OPEN) return;
+        const msg = { event, context: uuid };
+        if (payload !== undefined) msg.payload = payload;
+        if (event === "sendToPlugin" && actionInfo.action) {
+          msg.action = actionInfo.action;
+        }
+        websocket.send(JSON.stringify(msg));
+      }
+
+      function requestProfiles() {
+        setStatus("Cargando perfiles…");
+        send("sendToPlugin", { event: "getProfiles" });
+      }
+
+      function persistSettings() {
+        send("setSettings", settings);
+      }
+
+      function fillProfiles(items, selected) {
+        const flat = [];
+        for (const item of items || []) {
+          if (item && Array.isArray(item.children)) {
+            for (const child of item.children) {
+              if (child && child.value) {
+                flat.push({
+                  label: item.label ? `${item.label}: ${child.label || child.value}` : child.label || child.value,
+                  value: child.value,
+                });
+              }
+            }
+          } else if (item && item.value) {
+            flat.push({ label: item.label || item.value, value: item.value });
+          }
+        }
+
+        selectEl.innerHTML = "";
+        const placeholder = document.createElement("option");
+        placeholder.value = "";
+        placeholder.textContent = flat.length ? "Elige un perfil…" : "No hay perfiles";
+        selectEl.appendChild(placeholder);
+
+        // Grouped rendering when possible
+        const groups = new Map();
+        const ungrouped = [];
+        for (const item of items || []) {
+          if (item && Array.isArray(item.children)) {
+            groups.set(item.label || "Otros", item.children);
+          } else if (item && item.value) {
+            ungrouped.push(item);
+          }
+        }
+
+        if (groups.size > 0) {
+          for (const [groupLabel, children] of groups) {
+            const og = document.createElement("optgroup");
+            og.label = groupLabel;
+            for (const child of children) {
+              if (!child?.value) continue;
+              const opt = document.createElement("option");
+              opt.value = child.value;
+              opt.textContent = child.label || child.value;
+              og.appendChild(opt);
+            }
+            selectEl.appendChild(og);
+          }
+          for (const item of ungrouped) {
+            const opt = document.createElement("option");
+            opt.value = item.value;
+            opt.textContent = item.label || item.value;
+            selectEl.appendChild(opt);
+          }
+        } else {
+          for (const item of flat) {
+            const opt = document.createElement("option");
+            opt.value = item.value;
+            opt.textContent = item.label;
+            selectEl.appendChild(opt);
+          }
+        }
+
+        const wanted = selected || settings.profileName || "";
+        if (wanted) {
+          selectEl.value = wanted;
+          if (selectEl.value !== wanted) {
+            const opt = document.createElement("option");
+            opt.value = wanted;
+            opt.textContent = wanted + " (guardado)";
+            selectEl.appendChild(opt);
+            selectEl.value = wanted;
+          }
+        }
+
+        setStatus(flat.length ? `${flat.length} perfiles` : "No se pudieron cargar perfiles. ¿Quantum Engine abierto?");
+      }
+
+      selectEl.addEventListener("change", () => {
+        settings = { ...settings, profileName: selectEl.value || undefined };
+        persistSettings();
+      });
+
+      refreshBtn.addEventListener("click", () => requestProfiles());
+
+      // Called by Stream Deck when the Property Inspector opens.
+      function connectElgatoStreamDeckSocket(inPort, inPropertyInspectorUUID, inRegisterEvent, inInfo, inActionInfo) {
+        uuid = inPropertyInspectorUUID;
+        actionInfo = JSON.parse(inActionInfo || "{}");
+        settings = (actionInfo.payload && actionInfo.payload.settings) || {};
+
+        websocket = new WebSocket("ws://127.0.0.1:" + inPort);
+        websocket.onopen = function () {
+          websocket.send(
+            JSON.stringify({
+              event: inRegisterEvent,
+              uuid: inPropertyInspectorUUID,
+            }),
+          );
+          send("getSettings");
+          requestProfiles();
+        };
+
+        websocket.onmessage = function (evt) {
+          let data;
+          try {
+            data = JSON.parse(evt.data);
+          } catch {
+            return;
+          }
+
+          if (data.event === "didReceiveSettings") {
+            settings = (data.payload && data.payload.settings) || {};
+            if (settings.profileName) {
+              selectEl.value = settings.profileName;
+            }
+          }
+
+          if (data.event === "sendToPropertyInspector") {
+            const payload = data.payload || {};
+            if (payload.event === "getProfiles") {
+              fillProfiles(payload.items || [], settings.profileName);
+            }
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

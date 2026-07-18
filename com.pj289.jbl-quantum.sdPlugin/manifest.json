@@ -1,0 +1,112 @@
+{
+  "Name": "JBL Quantum",
+  "Version": "0.1.0.0",
+  "Author": "PJ289",
+  "Actions": [
+    {
+      "Name": "Cycle ANC",
+      "UUID": "com.pj289.jbl-quantum.cycle-anc",
+      "Icon": "imgs/actions/cycle-anc",
+      "Tooltip": "Alterna ANC / Ambient / Off",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/cycle-anc", "TitleAlignment": "bottom" }]
+    },
+    {
+      "Name": "Toggle ANC",
+      "UUID": "com.pj289.jbl-quantum.toggle-anc",
+      "Icon": "imgs/actions/toggle-anc",
+      "Tooltip": "Activa/desactiva ANC (sin Ambient ni Talk Through)",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/toggle-anc", "TitleAlignment": "bottom" }]
+    },
+    {
+      "Name": "ANC Off",
+      "UUID": "com.pj289.jbl-quantum.anc-off",
+      "Icon": "imgs/actions/anc-off",
+      "Tooltip": "Desactiva cancelación de ruido",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/anc-off" }]
+    },
+    {
+      "Name": "ANC On",
+      "UUID": "com.pj289.jbl-quantum.anc-on",
+      "Icon": "imgs/actions/anc-on",
+      "Tooltip": "Activa cancelación de ruido",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/anc-on" }]
+    },
+    {
+      "Name": "Ambient Aware",
+      "UUID": "com.pj289.jbl-quantum.anc-ambient",
+      "Icon": "imgs/actions/anc-ambient",
+      "Tooltip": "Modo ambient aware",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/anc-ambient" }]
+    },
+    {
+      "Name": "Mic Volume Up",
+      "UUID": "com.pj289.jbl-quantum.mic-volume-up",
+      "Icon": "imgs/actions/vol-up",
+      "Tooltip": "Sube volumen del micrófono",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/vol-up", "TitleAlignment": "bottom" }]
+    },
+    {
+      "Name": "Mic Volume Down",
+      "UUID": "com.pj289.jbl-quantum.mic-volume-down",
+      "Icon": "imgs/actions/vol-down",
+      "Tooltip": "Baja volumen del micrófono",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/vol-down", "TitleAlignment": "bottom" }]
+    },
+    {
+      "Name": "More Game",
+      "UUID": "com.pj289.jbl-quantum.game-chat-more-game",
+      "Icon": "imgs/actions/game",
+      "Tooltip": "Balance juego/chat hacia juego",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/game" }]
+    },
+    {
+      "Name": "More Chat",
+      "UUID": "com.pj289.jbl-quantum.game-chat-more-chat",
+      "Icon": "imgs/actions/chat",
+      "Tooltip": "Balance juego/chat hacia chat",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/chat" }]
+    },
+    {
+      "Name": "Cycle Profile",
+      "UUID": "com.pj289.jbl-quantum.cycle-profile",
+      "Icon": "imgs/actions/profile-cycle",
+      "Tooltip": "Cambia al siguiente perfil de Quantum Engine",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/profile-cycle", "TitleAlignment": "bottom" }]
+    },
+    {
+      "Name": "Set Profile",
+      "UUID": "com.pj289.jbl-quantum.set-profile",
+      "Icon": "imgs/actions/profile-set",
+      "Tooltip": "Carga un perfil de Quantum Engine (elige en el panel)",
+      "PropertyInspectorPath": "ui/set-profile.html",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/actions/profile-set", "TitleAlignment": "bottom" }]
+    }
+  ],
+  "Category": "JBL Quantum",
+  "CategoryIcon": "imgs/plugin/category",
+  "CodePath": "bin/plugin.js",
+  "Description": "Controla tus cascos JBL Quantum 810 via Quantum Engine (IPC UDP interno).",
+  "Icon": "imgs/plugin/marketplace",
+  "URL": "https://github.com/PJ289/jbl-quantum-streamdeck",
+  "SDKVersion": 2,
+  "Software": { "MinimumVersion": "6.5" },
+  "OS": [
+    { "Platform": "windows", "MinimumVersion": "10" }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "UUID": "com.pj289.jbl-quantum"
+}

@@ -1,0 +1,13 @@
+Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
+Repeat 2 times:
+--------------------------------
+   at QEIPC.API.QEIRegisterAsClient(UInt16, System.String, System.String, IntPtr, QEIPC.CLIENT_CALLBACKS ByRef)
+--------------------------------
+   at QEIPC.Client.Create(UInt16, System.String, System.String, QEIPC.CLIENT_CALLBACKS ByRef, Boolean)
+   at QEIPC.Client.Create(UInt16, System.String, System.String, Boolean)
+   at JblQuantumBridge.Program.Connect()
+   at JblQuantumBridge.Program+<Main>d__7.MoveNext()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[[JblQuantumBridge.Program+<Main>d__7, QuantumBridge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](<Main>d__7 ByRef)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].Start[[JblQuantumBridge.Program+<Main>d__7, QuantumBridge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](<Main>d__7 ByRef)
+   at JblQuantumBridge.Program.Main()
+   at JblQuantumBridge.Program.<Main>()

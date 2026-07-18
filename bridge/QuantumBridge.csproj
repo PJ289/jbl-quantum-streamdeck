@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>QuantumBridge</AssemblyName>
+    <RootNamespace>JblQuantumBridge</RootNamespace>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <!-- No trailing slash — MSBuild/command-line eats a final '\'. -->
+    <QuantumEnginePath Condition="'$(QuantumEnginePath)' == ''">C:\Program Files\JBL\QuantumENGINE</QuantumEnginePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="QuantumServer">
+      <HintPath>$(QuantumEnginePath)\QuantumServer.dll</HintPath>
+      <!-- Reference for compile only; do not copy into output / plugin package. -->
+      <Private>false</Private>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+  </ItemGroup>
+</Project>
