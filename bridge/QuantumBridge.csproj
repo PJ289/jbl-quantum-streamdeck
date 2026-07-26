@@ -12,10 +12,14 @@
     <QuantumEnginePath Condition="'$(QuantumEnginePath)' == ''">C:\Program Files\JBL\QuantumENGINE</QuantumEnginePath>
     <UseQuantumStubs Condition="'$(UseQuantumStubs)' == '' and !Exists('$(QuantumEnginePath)\QuantumServer.dll')">true</UseQuantumStubs>
     <QuantumServerDll Condition="'$(UseQuantumStubs)' != 'true'">$(QuantumEnginePath)\QuantumServer.dll</QuantumServerDll>
-    <QuantumServerDll Condition="'$(UseQuantumStubs)' == 'true'">$(MSBuildThisFileDirectory)stubs\bin\$(Configuration)\net8.0\QuantumServer.dll</QuantumServerDll>
+    <QuantumServerDll Condition="'$(UseQuantumStubs)' == 'true'">$(MSBuildThisFileDirectory)..\stubs\bin\$(Configuration)\net8.0\QuantumServer.dll</QuantumServerDll>
   </PropertyGroup>
 
+  <!-- The stubs project lives OUTSIDE bridge/ on purpose: SDK-style default globbing
+       (Compile Include="**/*.cs") would otherwise pull its .cs files (and generated
+       obj/**/*.cs) into this project too, causing duplicate-type/attribute errors. -->
   <ItemGroup>
+    <Compile Remove="../stubs/**/*.cs" />
     <Reference Include="QuantumServer">
       <HintPath>$(QuantumServerDll)</HintPath>
       <Private>false</Private>
@@ -24,6 +28,6 @@
   </ItemGroup>
 
   <Target Name="BuildQuantumStubs" BeforeTargets="ResolveAssemblyReferences" Condition="'$(UseQuantumStubs)' == 'true'">
-    <MSBuild Projects="$(MSBuildThisFileDirectory)stubs\QuantumServer.Stubs.csproj" Targets="Build" Properties="Configuration=$(Configuration)" />
+    <MSBuild Projects="$(MSBuildThisFileDirectory)..\stubs\QuantumServer.Stubs.csproj" Targets="Build" Properties="Configuration=$(Configuration)" />
   </Target>
 </Project>

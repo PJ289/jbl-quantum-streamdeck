@@ -20,5 +20,5 @@ Thumbs.db
 *.suo
 .vs/
 
-bridge/stubs/bin/
-bridge/stubs/obj/
+stubs/bin/
+stubs/obj/

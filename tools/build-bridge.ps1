@@ -50,7 +50,7 @@ try {
     elseif ($useStubs) {
         Write-Host "CI/AllowStubs: compilando bridge contra stubs (sin Quantum Engine en esta maquina)." -ForegroundColor Yellow
         Write-Host "El plugin publicado seguira necesitando Quantum Engine instalado en el PC del usuario." -ForegroundColor Yellow
-        dotnet build bridge/stubs/QuantumServer.Stubs.csproj -c Release
+        dotnet build stubs/QuantumServer.Stubs.csproj -c Release
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         dotnet build bridge/QuantumBridge.csproj -c Release "-p:QuantumEnginePath=C:\__no_quantum_engine__" "-p:UseQuantumStubs=true"
     }
