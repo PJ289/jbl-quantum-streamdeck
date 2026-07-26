@@ -2,12 +2,14 @@
   "name": "jbl-quantum-streamdeck",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "rollup -c",
     "build:bridge": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-bridge.ps1",
     "icons": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/ensure-icons.ps1",
     "install:plugin": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/install-plugin.ps1",
+    "pack:release": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/pack-release.ps1",
     "watch": "rollup -c -w"
   },
   "devDependencies": {

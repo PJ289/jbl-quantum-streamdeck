@@ -1,6 +1,6 @@
 # Compila QuantumBridge y copia SOLO el bridge al plugin (sin DLL de JBL).
-# En runtime, QuantumBridge carga QuantumServer.dll / IPC.dll / ShareMemory.dll
-# desde la instalación de Quantum Engine.
+# Si Quantum Engine no esta instalado, compila contra stubs (CI).
+# En runtime, QuantumBridge carga las DLL reales desde Quantum Engine.
 param(
     [string]$QuantumEnginePath = "C:\Program Files\JBL\QuantumENGINE"
 )
@@ -11,20 +11,25 @@ $PluginBin = Join-Path $ProjectRoot "com.pj289.jbl-quantum.sdPlugin\bin"
 $BridgeOut = Join-Path $ProjectRoot "bridge\bin\Release\net8.0-windows\win-x64"
 
 $QuantumEnginePath = $QuantumEnginePath.TrimEnd('\', '/')
-
-if (-not (Test-Path (Join-Path $QuantumEnginePath "QuantumServer.dll"))) {
-    throw "QuantumServer.dll no encontrado en: $QuantumEnginePath`nInstala JBL Quantum Engine o pasa -QuantumEnginePath."
-}
+$hasEngine = Test-Path (Join-Path $QuantumEnginePath "QuantumServer.dll")
 
 Push-Location $ProjectRoot
 try {
-    # Quote path for spaces (Program Files). No trailing backslash (MSBuild strips it).
-    dotnet build bridge/QuantumBridge.csproj -c Release "-p:QuantumEnginePath=$QuantumEnginePath"
+    if ($hasEngine) {
+        Write-Host "Compilando bridge con Quantum Engine: $QuantumEnginePath" -ForegroundColor Cyan
+        dotnet build bridge/QuantumBridge.csproj -c Release "-p:QuantumEnginePath=$QuantumEnginePath"
+    }
+    else {
+        Write-Host "Quantum Engine no encontrado - compilando contra stubs (CI)." -ForegroundColor Yellow
+        dotnet build bridge/stubs/QuantumServer.Stubs.csproj -c Release
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        dotnet build bridge/QuantumBridge.csproj -c Release "-p:QuantumEnginePath=C:\__no_quantum_engine__" "-p:UseQuantumStubs=true"
+    }
+
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
     New-Item -ItemType Directory -Force -Path $PluginBin | Out-Null
 
-    # Solo nuestro bridge. Las DLL de JBL/Harman NO se empaquetan.
     $files = @(
         "QuantumBridge.exe",
         "QuantumBridge.dll",
@@ -40,7 +45,6 @@ try {
         Copy-Item $src $PluginBin -Force
     }
 
-    # Quitar basura / DLL ajenas (builds antiguos, dependencias copiadas por error).
     $keep = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
     foreach ($name in $files) { [void]$keep.Add($name) }
     [void]$keep.Add("plugin.js")

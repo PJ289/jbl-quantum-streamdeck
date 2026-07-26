@@ -51,7 +51,33 @@ $env:QUANTUM_ENGINE_PATH = "D:\Ruta\A\QuantumENGINE"
 | [JBL Quantum Engine](https://www.jbl.com/) | Instalado; servicio activo |
 | Auriculares Quantum compatibles | Probado con Q810 Wireless |
 | [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) | Para ejecutar el bridge |
-| Node.js 20+ y .NET SDK 8 | Solo si **compilas** desde el código |
+| Node.js 20+ y .NET SDK 8 | Solo si **compilas** desde el código (no hace falta para usar un release) |
+
+---
+
+## Instalación desde un Release (recomendado)
+
+Los usuarios finales **no necesitan Node.js**.
+
+1. Instala **JBL Quantum Engine** y el [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) (si no lo tienes).
+2. En GitHub → **Releases**, descarga:
+   - `*.streamDeckPlugin` (instalación directa), **o**
+   - `*.zip` (manual).
+3. **Opción A:** abre el `.streamDeckPlugin` y déjaselo a Stream Deck.
+4. **Opción B:** descomprime el ZIP en:
+   `%APPDATA%\Elgato\StreamDeck\Plugins\`
+   (debe quedar la carpeta `com.pj289.jbl-quantum.sdPlugin`).
+5. Reinicia Stream Deck y busca la categoría **JBL Quantum**.
+
+Publicar un release (maintainers): crea un tag `v0.1.0` (o usa *Actions → Release → Run workflow*). El workflow de GitHub Actions compila el plugin y sube el ZIP / `.streamDeckPlugin`.
+
+En local también puedes generar el paquete:
+
+```powershell
+npm run pack:release
+```
+
+Salida en `dist/`.
 
 ---
 
@@ -143,7 +169,12 @@ Los perfiles guardan EQ, sonido espacial, etc. en Quantum Engine.
 
 ---
 
-## Licencia del código de este repositorio
+## Licencia
 
-El código propio de este repositorio (plugin, bridge, scripts) puedes usarlo según la licencia que indiques al publicar (por ejemplo MIT).  
-Eso **no** te otorga derechos sobre el software de JBL Quantum Engine ni sobre las marcas comerciales.
+El código propio de este repositorio (plugin, bridge, scripts y documentación del proyecto) se publica bajo la licencia **[MIT](LICENSE)**.
+
+```
+Copyright (c) 2026 PJ289
+```
+
+Eso **no** otorga derechos sobre el software de JBL Quantum Engine, ni sobre las marcas **JBL**, **Quantum**, **Harman** o **Stream Deck**, que pertenecen a sus respectivos dueños.

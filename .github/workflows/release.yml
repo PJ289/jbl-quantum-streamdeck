@@ -1,0 +1,113 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version label for artifact names (e.g. 0.1.0.0). Empty = manifest Version."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build bridge (compile against stubs; runtime uses installed Quantum Engine)
+        shell: pwsh
+        run: |
+          # Force stubs on CI (no Quantum Engine on hosted runners).
+          $env:QUANTUM_ENGINE_PATH = "C:\does-not-exist-quantum-engine"
+          ./tools/build-bridge.ps1 -QuantumEnginePath $env:QUANTUM_ENGINE_PATH
+
+      - name: Build plugin.js
+        run: npm run build
+
+      - name: Generate icons
+        shell: pwsh
+        run: ./tools/ensure-icons.ps1
+
+      - name: Pack release artifacts
+        id: pack
+        shell: pwsh
+        run: |
+          $ver = "${{ inputs.version }}"
+          if ([string]::IsNullOrWhiteSpace($ver) -and $env:GITHUB_REF_TYPE -eq "tag") {
+            $ver = $env:GITHUB_REF_NAME.TrimStart("v")
+          }
+          if ([string]::IsNullOrWhiteSpace($ver)) {
+            ./tools/pack-release.ps1 -QuantumEnginePath "C:\does-not-exist-quantum-engine"
+          } else {
+            ./tools/pack-release.ps1 -QuantumEnginePath "C:\does-not-exist-quantum-engine" -Version $ver
+          }
+          $zip = Get-ChildItem dist/*.zip | Select-Object -First 1
+          $sdp = Get-ChildItem dist/*.streamDeckPlugin | Select-Object -First 1
+          "zip=$($zip.FullName)" >> $env:GITHUB_OUTPUT
+          "sdp=$($sdp.FullName)" >> $env:GITHUB_OUTPUT
+          "zip_name=$($zip.Name)" >> $env:GITHUB_OUTPUT
+          "sdp_name=$($sdp.Name)" >> $env:GITHUB_OUTPUT
+
+      - name: Verify package has no Quantum Engine DLLs
+        shell: pwsh
+        run: |
+          $zip = Get-ChildItem dist/*.zip | Select-Object -First 1
+          $probe = Join-Path $env:TEMP "qe-plugin-probe"
+          if (Test-Path $probe) { Remove-Item $probe -Recurse -Force }
+          Expand-Archive $zip.FullName $probe
+          $banned = Get-ChildItem $probe -Recurse -Include QuantumServer.dll,IPC.dll,ShareMemory.dll -ErrorAction SilentlyContinue
+          if ($banned) {
+            $banned | ForEach-Object { Write-Host $_.FullName }
+            throw "Package contains Quantum Engine DLLs — aborting release."
+          }
+          Write-Host "OK: no vendor DLLs in package"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: streamdeck-plugin
+          path: |
+            dist/*.zip
+            dist/*.streamDeckPlugin
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          body: |
+            ## Instalación (usuarios)
+
+            1. Instala **JBL Quantum Engine** y el [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0).
+            2. Descarga `*.streamDeckPlugin` **o** el `.zip`.
+            3. Opción A: abre el `.streamDeckPlugin` (Stream Deck lo instala).
+            4. Opción B: descomprime el ZIP en `%APPDATA%\Elgato\StreamDeck\Plugins\`.
+            5. Reinicia Stream Deck.
+
+            **No necesitas Node.js** para usar el plugin.
+
+            Plugin **no oficial** — no afiliado a JBL/Harman/Elgato. No incluye DLL de Quantum Engine; las carga de tu instalación.
+          files: |
+            dist/*.zip
+            dist/*.streamDeckPlugin

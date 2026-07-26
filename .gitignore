@@ -19,3 +19,6 @@ Thumbs.db
 *.user
 *.suo
 .vs/
+
+bridge/stubs/bin/
+bridge/stubs/obj/
