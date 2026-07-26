@@ -43,6 +43,8 @@ namespace QEIPC
     public class Client
     {
         public bool Create(ushort port, string clientId, string clientInfo, bool bWatchServiceConnectionState) => false;
+
+        public void Destroy() { }
     }
 
     public class ClientIPC
