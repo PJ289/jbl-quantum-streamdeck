@@ -1,8 +1,11 @@
 # Compila QuantumBridge y copia SOLO el bridge al plugin (sin DLL de JBL).
-# Si Quantum Engine no esta instalado, compila contra stubs (CI).
-# En runtime, QuantumBridge carga las DLL reales desde Quantum Engine.
+#
+# Local (por defecto): REQUIERE JBL Quantum Engine instalado (referencia de compilacion).
+# CI / GitHub Actions: usa -AllowStubs (o env CI=true) para compilar sin Engine.
+# En runtime SIEMPRE se cargan las DLL reales desde Quantum Engine instalado.
 param(
-    [string]$QuantumEnginePath = "C:\Program Files\JBL\QuantumENGINE"
+    [string]$QuantumEnginePath = "",
+    [switch]$AllowStubs
 )
 
 $ErrorActionPreference = "Stop"
@@ -10,20 +13,63 @@ $ProjectRoot = Split-Path $PSScriptRoot -Parent
 $PluginBin = Join-Path $ProjectRoot "com.pj289.jbl-quantum.sdPlugin\bin"
 $BridgeOut = Join-Path $ProjectRoot "bridge\bin\Release\net8.0-windows\win-x64"
 
-$QuantumEnginePath = $QuantumEnginePath.TrimEnd('\', '/')
-$hasEngine = Test-Path (Join-Path $QuantumEnginePath "QuantumServer.dll")
+function Resolve-QuantumEnginePath {
+    param([string]$Preferred)
+
+    $candidates = @()
+    if ($Preferred) { $candidates += $Preferred }
+    if ($env:QUANTUM_ENGINE_PATH) { $candidates += $env:QUANTUM_ENGINE_PATH.Trim() }
+    $candidates += @(
+        "C:\Program Files\JBL\QuantumENGINE",
+        "C:\Program Files (x86)\JBL\QuantumENGINE",
+        "${env:ProgramFiles}\JBL\QuantumENGINE",
+        "${env:ProgramFiles(x86)}\JBL\QuantumENGINE"
+    )
+
+    foreach ($path in $candidates) {
+        if ([string]::IsNullOrWhiteSpace($path)) { continue }
+        $normalized = $path.Trim().TrimEnd('\', '/')
+        $dll = Join-Path $normalized "QuantumServer.dll"
+        if (Test-Path $dll) {
+            return $normalized
+        }
+    }
+
+    return $null
+}
+
+$useStubs = $AllowStubs -or ($env:CI -eq "true") -or ($env:USE_QUANTUM_STUBS -eq "1")
+$enginePath = Resolve-QuantumEnginePath -Preferred $QuantumEnginePath
 
 Push-Location $ProjectRoot
 try {
-    if ($hasEngine) {
-        Write-Host "Compilando bridge con Quantum Engine: $QuantumEnginePath" -ForegroundColor Cyan
-        dotnet build bridge/QuantumBridge.csproj -c Release "-p:QuantumEnginePath=$QuantumEnginePath"
+    if ($enginePath) {
+        Write-Host "Compilando bridge con Quantum Engine: $enginePath" -ForegroundColor Cyan
+        dotnet build bridge/QuantumBridge.csproj -c Release "-p:QuantumEnginePath=$enginePath" "-p:UseQuantumStubs=false"
     }
-    else {
-        Write-Host "Quantum Engine no encontrado - compilando contra stubs (CI)." -ForegroundColor Yellow
+    elseif ($useStubs) {
+        Write-Host "CI/AllowStubs: compilando bridge contra stubs (sin Quantum Engine en esta maquina)." -ForegroundColor Yellow
+        Write-Host "El plugin publicado seguira necesitando Quantum Engine instalado en el PC del usuario." -ForegroundColor Yellow
         dotnet build bridge/stubs/QuantumServer.Stubs.csproj -c Release
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         dotnet build bridge/QuantumBridge.csproj -c Release "-p:QuantumEnginePath=C:\__no_quantum_engine__" "-p:UseQuantumStubs=true"
+    }
+    else {
+        Write-Host ""
+        Write-Host "ERROR: No se encontro JBL Quantum Engine (QuantumServer.dll)." -ForegroundColor Red
+        Write-Host "Para compilar en local necesitas Quantum Engine instalado." -ForegroundColor Red
+        Write-Host ""
+        Write-Host "Rutas buscadas:"
+        Write-Host "  - `$env:QUANTUM_ENGINE_PATH"
+        Write-Host "  - C:\Program Files\JBL\QuantumENGINE"
+        Write-Host "  - C:\Program Files (x86)\JBL\QuantumENGINE"
+        Write-Host ""
+        Write-Host "Opciones:"
+        Write-Host "  1) Instala Quantum Engine y vuelve a ejecutar."
+        Write-Host "  2) Pasa la ruta:  .\tools\build-bridge.ps1 -QuantumEnginePath 'D:\ruta\QuantumENGINE'"
+        Write-Host "  3) Solo CI:       .\tools\build-bridge.ps1 -AllowStubs"
+        Write-Host ""
+        exit 1
     }
 
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

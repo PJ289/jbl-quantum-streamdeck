@@ -5,9 +5,13 @@
     <Nullable>enable</Nullable>
     <AssemblyName>QuantumServer</AssemblyName>
     <RootNamespace></RootNamespace>
-    <!-- Compile-only stand-in; never ship with the Stream Deck plugin. -->
+    <Version>2.0.0.5</Version>
+    <AssemblyVersion>2.0.0.5</AssemblyVersion>
+    <FileVersion>2.0.0.5</FileVersion>
+    <InformationalVersion>2.0.0.5-stubs</InformationalVersion>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
   </PropertyGroup>
 </Project>

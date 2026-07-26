@@ -69,19 +69,21 @@ Los usuarios finales **no necesitan Node.js**.
    (debe quedar la carpeta `com.pj289.jbl-quantum.sdPlugin`).
 5. Reinicia Stream Deck y busca la categoría **JBL Quantum**.
 
-Publicar un release (maintainers): crea un tag `v0.1.0` (o usa *Actions → Release → Run workflow*). El workflow de GitHub Actions compila el plugin y sube el ZIP / `.streamDeckPlugin`.
+Publicar un release (maintainers):
 
-En local también puedes generar el paquete:
+1. Sube los cambios del workflow/stubs a `main`.
+2. Crea un tag nuevo, p. ej. `v0.1.1` (si reusas un tag fallido, bórralo antes o usa otro número).
+3. El workflow de GitHub Actions compila **sin** Quantum Engine (stubs solo de compilación) y publica el ZIP / `.streamDeckPlugin`.
 
-```powershell
-npm run pack:release
-```
+**Importante:** compilar en CI **sí es posible** y es mejor para los usuarios (descargan el plugin; **no necesitan Node**).  
+Los stubs no sustituyen a Quantum Engine en el PC del usuario: solo permiten generar `QuantumBridge.exe` en GitHub. En runtime el bridge sigue cargando las DLL reales de Quantum Engine instalado.
 
-Salida en `dist/`.
-
+Alternativa si CI fallara: en tu PC con Engine instalado ejecuta `npm run pack:release` y sube los archivos de `dist/` a un Release manualmente.
 ---
 
 ## Instalación (desde el código)
+
+**Requisito:** JBL Quantum Engine instalado (para compilar el bridge se usa como referencia; no se copia al plugin).
 
 En la carpeta del proyecto:
 
@@ -107,10 +109,17 @@ Luego:
 ### Comandos útiles
 
 ```powershell
-npm run build:bridge   # solo bridge
+npm run build:bridge   # requiere Quantum Engine instalado
 npm run build          # solo plugin.js
 npm run icons          # regenerar iconos
 npm run install:plugin # build + instalar
+npm run pack:release   # ZIP / .streamDeckPlugin en dist/
+```
+
+Si compilas en un entorno sin Quantum Engine (solo CI):
+
+```powershell
+powershell -File tools\build-bridge.ps1 -AllowStubs
 ```
 
 Probar el bridge sin Stream Deck:

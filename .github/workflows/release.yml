@@ -35,12 +35,9 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
-      - name: Build bridge (compile against stubs; runtime uses installed Quantum Engine)
+      - name: Build bridge (stubs on CI; runtime still needs Quantum Engine on user PCs)
         shell: pwsh
-        run: |
-          # Force stubs on CI (no Quantum Engine on hosted runners).
-          $env:QUANTUM_ENGINE_PATH = "C:\does-not-exist-quantum-engine"
-          ./tools/build-bridge.ps1 -QuantumEnginePath $env:QUANTUM_ENGINE_PATH
+        run: ./tools/build-bridge.ps1 -AllowStubs
 
       - name: Build plugin.js
         run: npm run build
@@ -58,9 +55,9 @@ jobs:
             $ver = $env:GITHUB_REF_NAME.TrimStart("v")
           }
           if ([string]::IsNullOrWhiteSpace($ver)) {
-            ./tools/pack-release.ps1 -QuantumEnginePath "C:\does-not-exist-quantum-engine"
+            ./tools/pack-release.ps1 -AllowStubs
           } else {
-            ./tools/pack-release.ps1 -QuantumEnginePath "C:\does-not-exist-quantum-engine" -Version $ver
+            ./tools/pack-release.ps1 -AllowStubs -Version $ver
           }
           $zip = Get-ChildItem dist/*.zip | Select-Object -First 1
           $sdp = Get-ChildItem dist/*.streamDeckPlugin | Select-Object -First 1

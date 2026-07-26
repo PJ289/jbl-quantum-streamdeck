@@ -1,8 +1,9 @@
 # Empaqueta el plugin listo para descargar (sin DLL de JBL).
 # Salida: dist/com.pj289.jbl-quantum.sdPlugin.zip  y  .streamDeckPlugin
 param(
-    [string]$QuantumEnginePath = "C:\Program Files\JBL\QuantumENGINE",
-    [string]$Version = ""
+    [string]$QuantumEnginePath = "",
+    [string]$Version = "",
+    [switch]$AllowStubs
 )
 
 $ErrorActionPreference = "Stop"
@@ -19,7 +20,11 @@ try {
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
     }
 
-    & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "build-bridge.ps1") -QuantumEnginePath $QuantumEnginePath
+    $bridgeArgs = @()
+    if ($QuantumEnginePath) { $bridgeArgs += @("-QuantumEnginePath", $QuantumEnginePath) }
+    if ($AllowStubs -or $env:CI -eq "true") { $bridgeArgs += "-AllowStubs" }
+
+    & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "build-bridge.ps1") @bridgeArgs
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
     npm run build
