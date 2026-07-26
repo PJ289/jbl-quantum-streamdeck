@@ -1,0 +1,47 @@
+name: CI (compile check)
+
+# IMPORTANT: this workflow does NOT produce the binaries that get published to
+# GitHub Releases. GitHub-hosted runners cannot legally have JBL Quantum Engine
+# installed, so the bridge here is compiled against compile-time-only stubs
+# (bridge/QuantumBridge.csproj + stubs/QuantumServer.Stubs.csproj).
+#
+# Those stubs are ONLY good enough to catch C# syntax/API errors early. A
+# binary built against them WILL FAIL AT RUNTIME (TypeLoadException) when it
+# loads the real QuantumServer.dll, because .NET requires exact type-layout
+# metadata for early-bound calls, not just matching method names.
+#
+# Real releases must be built locally on a machine with JBL Quantum Engine
+# installed, then published manually. See README.md "Publicar una release".
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  compile-check:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Compile bridge against stubs (syntax/API check only, NOT for distribution)
+        shell: pwsh
+        run: ./tools/build-bridge.ps1 -AllowStubs
+
+      - name: Build plugin.js
+        run: npm run build

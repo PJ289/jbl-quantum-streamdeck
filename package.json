@@ -10,6 +10,7 @@
     "icons": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/ensure-icons.ps1",
     "install:plugin": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/install-plugin.ps1",
     "pack:release": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/pack-release.ps1",
+    "publish:release": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/publish-release.ps1",
     "watch": "rollup -c -w"
   },
   "devDependencies": {

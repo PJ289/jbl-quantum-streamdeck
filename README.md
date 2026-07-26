@@ -69,16 +69,25 @@ Los usuarios finales **no necesitan Node.js**.
    (debe quedar la carpeta `com.pj289.jbl-quantum.sdPlugin`).
 5. Reinicia Stream Deck y busca la categoría **JBL Quantum**.
 
-Publicar un release (maintainers):
+### Publicar un release (maintainers)
 
-1. Sube los cambios del workflow/stubs a `main`.
-2. Crea un tag nuevo, p. ej. `v0.1.1` (si reusas un tag fallido, bórralo antes o usa otro número).
-3. El workflow de GitHub Actions compila **sin** Quantum Engine (stubs solo de compilación) y publica el ZIP / `.streamDeckPlugin`.
+**Importante — leer antes de publicar:** los binarios de release **NO se compilan en GitHub Actions**. El workflow de CI (`.github/workflows/ci.yml`) solo compila contra unos *stubs* (simulacros de la API de JBL) para detectar errores de sintaxis/API en cada push; **no genera un `QuantumBridge.exe` válido para distribuir**. Un `.exe` compilado contra los stubs arranca pero falla en tiempo de ejecución (`TypeLoadException`) en cuanto intenta cargar la DLL real, porque .NET exige que el layout de tipos coincida exactamente en las llamadas resueltas en compilación — los stubs solo garantizan que los *nombres* coinciden, no el layout binario real de JBL.
 
-**Importante:** compilar en CI **sí es posible** y es mejor para los usuarios (descargan el plugin; **no necesitan Node**).  
-Los stubs no sustituyen a Quantum Engine en el PC del usuario: solo permiten generar `QuantumBridge.exe` en GitHub. En runtime el bridge sigue cargando las DLL reales de Quantum Engine instalado.
+Por eso, toda release real se compila y publica **manualmente, en un PC con JBL Quantum Engine instalado** (nunca en CI):
 
-Alternativa si CI fallara: en tu PC con Engine instalado ejecuta `npm run pack:release` y sube los archivos de `dist/` a un Release manualmente.
+```powershell
+gh auth login   # una vez, si no lo tienes ya autenticado
+npm run install:plugin   # opcional: prueba local antes de publicar
+powershell -File tools\publish-release.ps1 -Version 0.1.4
+```
+
+`publish-release.ps1`:
+
+1. Compila el bridge contra la DLL **real** de Quantum Engine (nunca stubs).
+2. Empaqueta `dist/*.zip` y `dist/*.streamDeckPlugin`.
+3. Arranca el `.exe` recién compilado y comprueba que responde `{"ok":true,...}` antes de publicar (evita repetir el fallo de v0.1.1–v0.1.3).
+4. Crea el Release en GitHub (`gh release create`) con esos artefactos.
+
 ---
 
 ## Instalación (desde el código)
@@ -113,10 +122,10 @@ npm run build:bridge   # requiere Quantum Engine instalado
 npm run build          # solo plugin.js
 npm run icons          # regenerar iconos
 npm run install:plugin # build + instalar
-npm run pack:release   # ZIP / .streamDeckPlugin en dist/
+npm run pack:release   # ZIP / .streamDeckPlugin en dist/ (usa Quantum Engine real si lo encuentra)
 ```
 
-Si compilas en un entorno sin Quantum Engine (solo CI):
+Si compilas en un entorno sin Quantum Engine (solo para comprobar que el código compila; **no sirve para distribuir**, ver aviso arriba):
 
 ```powershell
 powershell -File tools\build-bridge.ps1 -AllowStubs
